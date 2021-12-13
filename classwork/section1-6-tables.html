@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Section 1.6 - Tables</title>
+  </head>
+  <body>
+    <p><a href="http://www.w3schools.com/html/html_tables.asp">html tables info from w3schools.com</a>
+    </p>
+    <p>
+      If you include a caption, the caption opening and closing tags must immediately follow the opening table tag.
+    </p>
+    <p>
+      Below is an example table with a caption:
+    </p>
+    <table>
+    <caption> Transistors then and now</caption>
+    <tr>
+      <th>Attribute</th>
+      <th>1975</th>
+      <th>2015</th>
+    </tr>
+    <tr>
+      <th>Transistor size</th>
+      <td>6 &mu;m</td>
+      <td>14 nm</td>
+    </tr>
+    <tr>
+      <th> Transistor count</th>
+      <td>6K</td>
+      <td> 1.3G</td>
+    </tr>
+    </table>
+    <p>
+      The following HTML is an example of a table with one row of column headers and one row of data. Try adding the necessary HTML and text to create
+      another row, Average Temperature, at the bottom of the table that shows Alaska as having the lowest average temperature and Florida as having the
+      highest average temperature.
+    </p>
+    <table>
+       <caption>State Weather Extremes</caption>
+       <tr>
+          <th></th>
+          <th>Lowest</th>
+          <th>Highest</th>
+       </tr>
+       <tr>
+          <th>Average Rainfall</th>
+          <td>Nevada</td>
+          <td>Hawaii</td>
+       </tr>
+       <tr>
+          <th>Average Temperature</th>
+          <td>Alaska</td>
+          <td>Florida</td>
+       </tr>
+    </table>
+    <p>
+      The following HTML is an example of a table with one column of headers and one column of data. Try adding the necessary HTML and text to create
+      another column, Heaviest, on the right side of the table that shows Ostrich as the heaviest bird and Blue Whale as the heaviest mammal.
+    </p>
+    <table>
+       <caption>Weight Extremes</caption>
+       <tr>
+          <th> </th>
+          <th>Lightest</th>
+          <th>Heaviest</th>
+       </tr>
+       <tr>
+          <th>Bird</th>
+          <td>Bee Hummingbird</td>
+          <td>Ostrich</td>
+       </tr>
+       <tr>
+          <th>Mammal</th>
+          <td>Pygmy Shrew</td>
+          <td>Blue Whale</td>
+       </tr>
+    </table>
+    <p>
+      HTML tables are rather plain without CSS. Table columns and rows render just large enough to display the inner content, and usually no table border is
+      displayed. CSS (discussed elsewhere) can be used to increase the table's size, add borders, add background images and color, change the cell text
+      alignment, etc.
+    </p>
+    <p>
+      The following HTML creates a table with a "Warmup" cell that spans 3 columns and a "Scrimmage" cell that spans 2 rows. Add HTML and text to create a
+      "Sat" column and "12:00" row containing cells spanning multiple rows or columns as shown in the expected web page.
+    </p>
+    <p>
+      <em>How it started:</em>
+    </p>
+    <table>
+      <caption>Team Schedule</caption>
+       <tr>
+          <th></th>
+          <th>Mon</th>
+          <th>Wed</th>
+          <th>Fri</th>
+       </tr>
+       <tr>
+          <th>9:00</th>
+          <td colspan="3">Warmup</td>
+       </tr>
+       <tr>
+          <th>10:00</th>
+          <td>Drills</td>
+          <td>Skills Test</td>
+          <td rowspan="2">Scrimmage</td>
+       </tr>
+       <tr>
+          <th>11:00</th>
+          <td>Film</td>
+          <td>Weights</td>
+       </tr>
+    </table>
+    <p>
+      <em>Expected result:</em>
+    </p>
+    <table>
+      <caption>Team Schedule</caption>
+       <tr>
+          <th></th>
+          <th>Mon</th>
+          <th>Wed</th>
+          <th>Fri</th>
+          <th>Sat</th>
+       </tr>
+       <tr>
+          <th>9:00</th>
+          <td colspan="3">Warmup</td>
+          <td rowspan="3">Games</td>
+       </tr>
+       <tr>
+          <th>10:00</th>
+          <td>Drills</td>
+          <td>Skills Test</td>
+          <td rowspan="2">Scrimmage</td>
+       </tr>
+       <tr>
+          <th>11:00</th>
+          <td>Film</td>
+          <td>Weights</td>
+       </tr>
+       <tr>
+          <th>12:00</th>
+          <td colspan="2"> </td>
+          <td colspan="2">Team Lunch</td>
+       </tr>
+    </table>
+    <p>
+      <img src="1-6-7-image.png" alt="Spanning multiple columns and rows">
+    </p>
+    <p>
+      Create another row for Joe, at the bottom of the table with a lowest score of 83 and highest of 95.
+    </p>
+    <table>
+       <caption>Exam scores</caption>
+       <tr>
+          <th></th>
+          <th>Lowest</th>
+          <th>Highest</th>
+       </tr>
+       <tr>
+          <th>Tim</th>
+          <td>80</td>
+          <td>90</td>
+       </tr>
+       <!-- new row below here -->
+       <tr>
+          <th>Joe</th>
+          <td>83</td>
+          <td>95</td>
+      </tr>
+    </table>
+    <p>
+      Create another column on the right side of the table for Sam, with Project 1 score of 86 and Project 2 score of 98.
+    </p>
+    <table>
+       <caption>Project scores</caption>
+       <tr>
+
+          <!-- Update the following code snippet with your solution -->
+          <th></th>
+          <th>Tim</th>
+          <th>Sam</th>
+       </tr>
+       <tr>
+          <th>Project 1</th>
+          <td>80</td>
+          <td>86</td>
+       </tr>
+       <tr>
+          <th>Project 2</th>
+          <td>100</td>
+          <td>98</td>
+       </tr>
+    </table>
+    <p>
+      Add a new row for Tom as the fifth row of the table, with a grade of: C+.
+    </p>
+    <p>
+      Next participation activity: On the left-most side of the table create a Group column containing groups A and B. Group A should span 2 rows.
+    </p>
+    <p>
+      Expected result:
+    </p>
+    <table>
+        <tr>
+            <!-- Update the following code snippet with your solution -->
+            <th>Student</th>
+            <th>Quiz 1</th>
+            <th>Project 1</th>
+            <th>Homework 1</th>
+            <th>Midterm</th>
+            <th>Class</th>
+         </tr>
+         <tr>
+            <td rowspan="2">A</td>
+            <td>Ann</td>
+            <td>91</td>
+            <td>80</td>
+            <td>98</td>
+            <td>75</td>
+         </tr>
+         <tr>
+            <td>Jim</td>
+            <td>86</td>
+            <td>77</td>
+            <td>81</td>
+            <td>89</td>
+         </tr>
+         <tr>
+            <td>B</td>
+            <td>Pam</td>
+            <td>79</td>
+            <td>82</td>
+            <td>72</td>
+            <td>84</td>
+          </tr>
+    </table>
+    <p>
+      Make Lucy's Excused value span the Tuesday and Wednesday columns. Make Charlie's Present value span all three columns.
+    </p>
+    <table>
+       <caption>Attendance</caption>
+       <tr>
+
+          <!-- Update the following code snippet with your solution -->
+          <th>Student</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+       </tr>
+       <tr>
+          <td>Lucy</td>
+          <td>Present</td>
+          <td colspan="2">Excused</td>
+       </tr>
+       <tr>
+          <td>Charlie</td>
+          <td colspan="3">Present</td>
+
+       </tr>
+    </table>
+    <p>
+      Head, Body, and Footer
+    </p>
+    <p>
+      Three optional tags specify the parts of a table.
+    </p>
+    <ul>
+      <li>The <em>thead</em> tag specifies the table header</li>
+      <li>The <em>tbody</em> tag specifies the table body</li>
+      <li>The <em>tfoot</em> tag specifies the table footer</li>
+    </ul>
+    <p>
+      These tags do not affect the layout of the table, but browsers may use the tags to enable the table body to scroll independently of the header and
+      footer or to print the header and footer on each page of a multi-page table printout.
+    </p>
+    
+
+  </body>
+</html>
