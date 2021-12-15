@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Section 1-8 - Links</title>
+  </head>
+  <body>
+    <p>
+      The anchor tag a defines a hyperlink in a web page. A hyperlink, or link, specifies where other information is located and what action the web browser
+      should perform when a user clicks the hyperlink. A hyperlink action may tell the web browser to go to another web page, to go to a location in the
+      same web page, to download a file, or to send an email.
+    </p>
+    <p>
+      A hyperlink has three parts: the opening <a> tag with the href attribute, the content displayed for the link , and the closing </a> tag. The href
+      attribute specifies the hyperlink's URL. Ex: <a href="https://wikipedia.org/">Wikipedia</a> displays the hyperlink Wikipedia and causes the browser to
+      request the URL https://wikipedia.org/ when the hyperlink is clicked. Other URL schemes may cause the browser to take different actions. Ex: The URL
+      mailto:mary@gmail.com uses the mailto scheme that directs the browser to start an email program and address an email to mary@gmail.com.
+    </p>
+    <p>
+      <img src="1-8-1-url-schemes.png" alt="url schemes">
+    </p>
+    <p>
+      <img src="1-8-2-hyperlink-actions.png" alt="hyperlink actions">
+    </p>
+    <p>
+      <img src="1-8-3-participation-activity.png" alt="anchor participation practice">
+    </p>
+    <p>
+      <strong>Absolute and relative URLs</strong>
+    </p>
+    <p>
+      When a web page links to web resources on the same website, a relative URL may be specified in the href attribute instead of an absolute URL.
+    </p>
+    <ul>
+      <li>An absolute URL is a complete URL. Ex: <a href="http://example.com/test.html">test</a> is a hyperlink using the absolute URL http://example.com
+        /test.html.</li>
+      <li>A relative URL specifies the relative path to the web resource with no scheme or hostname. Ex: <a href="test.html">test</a> uses the relative URL
+        test.html to refer to an HTML document on the same website and with the same path as the current HTML document.</li>
+    </ul>
+    <p>
+      A relative URL may use two periods followed by a forward slash (../) in front of a filename to indicate the file is one directory above the current
+      HTML document. Ex: The relative URL ../test.html indicates test.html is in the directory above the HTML document containing the link.
+    </p>
+    <p>
+      <img src="1-8-4-participation-activity.png" alt="relative url participation activity">
+    </p>
+    <p>
+      <img src="1-8-5-participation-activity.png" alt="relative url directories">
+    </p>
+    <p>
+      <strong>Section links</strong>
+    </p>
+    <p>
+      A URL can point to a section, or fragment, of a document by adding a hash tag (#) and a fragment identifier at the end of the URL. Ex:
+      https://en.wikipedia.org/wiki/Computer_science#History refers to the "History" section of the "Computer_science" page on Wikipedia.
+    </p>
+    <p>
+      Adding the id attribute to any HTML tag creates a fragment identifier, permitting URLs to link directly to the id's location in the document. The
+      HTML in the figure below creates two section links to the h2 tags with fragment identifiers "Ch1" and "Ch2".
+    </p>
+    <p>
+      <img src="1-8-1-figure1-section-links.png" alt="section links illustration">
+    </p>
+    <p>
+      <img src="1-8-6-participation-activity.png" alt="create a hyperlink to a web page fragment">
+    </p>
+    <p>
+      <img src="1-8-7-participation-activity.png" alt="section links">
+    </p>
+    <p>
+      <strong>Image links and targets</strong>
+    </p>
+    <p>
+      The content in a hyperlink may be any valid HTML or text. A graphical hyperlink or image link uses an image inside a hyperlink instead of text.
+      Ex: The HTML below uses an image of a dog that links to the American Kennel Club.
+    </p>
+    <p>
+      <img src="1-8-2-figure-graphical-hyperlink.png" alt="graphical hyperlink illustration">
+    </p>
+    <p>
+      An anchor tag's <strong>target attribute</strong> indicates how the browser should display the link when clicked.
+    </p>
+    <ul>
+      <li>The _self attribute value is the default and indicates the browser will open the link in the same tab or window.</li>
+      <li>The _blank attribute value indicates the browser will open the link in a new tab or window.</li>
+    </ul>
+    <p>
+      <img src="1-8-3-target-attribute.png" alt="target attribute">
+    </p>
+    <p>
+      <img src="1-8-8-participation-activity.png" alt="graphical hyperlinks and the target attribute">
+    </p>
+    <p>
+      <img src="1-8-9-participation-activity.png" alt="hyperlink review">
+    </p>
+    
+
+  </body>
+</html>

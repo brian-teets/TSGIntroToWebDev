@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Section 1-7 Images</title>
+  </head>
+  <body>
+    <p>
+      The img tag displays an image in a web page. The img tag does not enclose any content and is therefore a void element with no closing tag. The img tag
+      has two common attributes:
+    </p>
+    <ul>
+      <li>The scr attribute is the mandatory attribute that specifies the URL of the image file to display</li>
+      <li>The alt attribute provides a text description to use as an alternative to displaying the image</li>
+    </ul>
+    <p>
+      Ex: <img src="http://example.com/family.jpg" alt="Smith family reunion"> displays the image family.jpg, but the text "Smith family reunion" displays
+      if the image cannot be displayed.
+    </p>
+    <p>
+      Image formats
+    </p>
+    <p>
+      Web browsers support 3 popular image formats:
+    </p>
+    <ol>
+      <li>The JPEG (Joint Photographic Experts Group) image format is commonly used for digital photographs.</li>
+      <li>The PNG (Portable Network Graphics) image format is commonly used for line art, screenshots, or images requiring transparency.</li>
+      <li>The GIF (Graphics Interchange Format) image format is commonly used for simple animated images.</li>
+    </ol>
+    <p>
+      All three formats use data compression to decrease the image file size, which allows the file to be transferred over the internet quicker. JPEG images
+      use lossy compression, meaning that some of the original picture information is lost when compressed. A photograph is best saved as a JPEG image
+      because humans cannot easily perceive the quality loss in a photograph. PNG and GIF images use lossless compression, meaning no image quality is lost.
+      Lossless compression works best when a large number of adjacent pixels are the same color.
+    </p>
+    <p>
+      JPEG and PNG images can display true color (24-bit color), which is approximately 16 million different colors. GIF images are limited to only 256
+      colors (8-bit color), but GIF images can display animations, which are popular on social media.
+    </p>
+    <p>
+      Less common image formats include:
+    </p>
+    <ul>
+      <li>The APNG image format by Mozilla adds animation capability to PNG with true color support.</li>
+      <li>The SVG image format is an XML format that describes an image as a series of shapes and lines.</li>
+      <li>The WebP image format by Google supports true color, transparency, and animation.</li>
+    </ul>
+    <p>
+      Favicon: A favicon is a small icon that identifies a website and typically displays in a browser tab. A favicon can be any image format (JPEG, PNG,
+      GIF) and any size. PNG is a popular favicon format because a PNG can have transparent pixels.
+    </p>
+    <p>
+    <img src="1-7-7-favicon.png" alt="favicon">
+    </p>
+    <p>
+      A favicon is defined with a link tag, which defines a link between a web page and an external resource. <br>
+      <img src="1-7-8-favicon-link-example.png" alt="favicon link">
+    </p>
+    <p>
+      Participation challenge 1-7-1
+    </p>
+    <p>
+      Part 1: Add an img tag with src attribute containing: https://resources.zybooks.com/WebProgramming/dice4v1.png
+    </p>
+    <p>
+      <img src="https://resources.zybooks.com/WebProgramming/dice4v1.png" alt="dice">
+    </p>
+    <p>
+      Part 2: Add a height attribute of 200
+    </p>
+    <p>
+      <img src="https://resources.zybooks.com/WebProgramming/lake1v1.jpg" alt="Lake view" height="200">
+    </p>
+    
+
+
+  </body>
+</html>
