@@ -5,6 +5,61 @@
     <title>Section 1-9 Special Characters</title>
   </head>
   <body>
+    <p>
+      <strong>Entities</strong>
+    </p>
+    <p>
+      An <em>entity</em> is a mechanism for writing special characters or symbols in HTML, such as mathematical symbols, characters in most languages, and
+      many other symbols. Many HTML entities can be specified by name. However, some entities do not have a name and can instead be specified using a
+      decimal or hexadecimal number as shown in the table below.
+    </p>
+    <p>
+      <img src="1-9-1-html-entity-table.png" alt="HTML entity table">
+    </p>
+    <p>
+      &forall; <br>
+      &#9730;
+    </p>
+    <p>
+      <img src="1-9-1-participation-activity.png" alt="HTML entities participation activity">
+    </p>
+    <p>
+      <strong>Entities for Reserved Characters</strong>
+    </p>
+    <p>
+      The &lt; and &amp; characters can be displayed using entities. The &lt; character normally marks the beginning of a tag, so &lt; is used to display
+      the &lt;character when it is not part of a tag. The &amp; character marks the beginning of an entity name, so &amp; is used to display the &amp;
+      character when & does not start an entity name.
+    </p>
+    <p>
+      If the browser detects that &lt; is being used without a tag or if & is being used without an entity, the browser will likely display the &lt; or
+     &amp; characters. Ex: The HTML 2 &lt; 3 &amp; 4 will usually display 2 &lt; 3 &amp; 4 without using entities. <em>Good practice</em> is to use &lt; and
+     &amp; instead of relying on the browser to determine the HTML author's intention. Ex: 2 &lt; 3 &amp; 4.
+    </p>
+    <p>
+      <img src="1-9-2-participation-activity.png" alt="Match the HTML entities">
+    </p>
+    <p>
+      <strong>Non breaking characters</strong>
+    </p>
+    <p>
+      A web browser sometimes wraps a line — called wrapping or breaking the line — at an inconvenient location. For instance, when specifying a measurement
+      range such 2-2.5", all the characters should be kept together when displayed. However, the browser may split the character sequence if the characters
+      occur at the end of a line, with 2- appearing at the end of one line and 2.5" appearing at the beginning of the next line.
+    </p>
+    <p>
+      A <em>non-breaking character</em> is an inter-word character that permits treating the words on both sides to be one word. A
+      <em>non-breaking hyphen</em>, &#8209;, looks like a regular hyphen but acts like a normal character in the middle of a word. Ex: off&#8209;campus
+      displays "off‑campus" on the same line. A <em>non-breaking space</em>, &nbsp;, looks like a single space but acts like a normal character in the
+      middle of a word. Ex: 5&nbsp;km displays "5 km" on the same line. The non-breaking space is also useful for displaying more than one space between
+      words. Ex: Abe&nbsp;&nbsp;&nbsp;Lincoln displays "Abe   Lincoln" with 3 spaces between Abe and Lincoln.
+    </p>
+    <p>
+      <img src="1-9-3-participation-activity.png" alt="HTML entities participation activity">
+    </p>
+    <p>
+      <a href="http://dev.w3.org/html5/html-author/charref">Table of all known HTML entities</a> from W3 Consortium
+    </p>
     
 
   </body>
