@@ -3,6 +3,13 @@
    <head>
       <title>HTML Practice</title>
    </head>
+   <!--
+   <style>
+   table, th, td {
+     border:1px solid black;
+   }
+   </style>
+ -->
    <body>
       <h1>1.</h1>
       <!-- Your solution to #1 here -->
@@ -18,12 +25,12 @@
 
       <h1>2.</h1>
       <!-- Your solution to #2 here -->
-      &lt;!-- &amp; --&gt;
+      <p>&lt;!--&amp;--&gt;</p>
       <hr>
 
       <h1>3.</h1>
       <!-- Your solution to #3 here -->
-      &lt;p&gt;Nice!&lt;/p&gt;
+      <p>&lt;p&gt;Nice!&lt;/p&gt;</p>
       <hr>
 
       <h1>4.</h1>
@@ -61,13 +68,16 @@
       <!-- Your solution to #7 here -->
       <table>
         <tr>
-          <td rowspan="3"><h1>1</h1></td>
+          <td colspan="3"><h1>1</h1></td>
         </tr>
         <tr>
-          <td colspan="2"><h1>2</h1></td>
+          <td rowspan="2"><h1>2</h1></td>
+          <td><h1>3</h1></td>
+          <td><h1>4</h1></td>
         </tr>
         <tr>
-
+          <td><h1>5</h1></td>
+          <td><h1>6</h1></td>
         </tr>
       </table>
       <hr>
