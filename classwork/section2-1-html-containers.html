@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML containers</title>
+  </head>
+  <body>
+    <h1>2.1 HTML containers</h1>
+    <h2>Containers and parent containers </h2>
+    <p>
+      A container is any part of a web document body that has opening and closing tags. Web developers typically create many containers as a convenience to assist
+      in organizing and formatting content. Ex: Containers can be formatted by applying styles to adjust margins, padding, horizontal and vertical alignment, and
+      other visual presentation attributes. <br>
+      <img src="2-1-1-containers.png" alt="containers" width="1000">
+    </p>
+    <p>
+      A <strong>parent container</strong> is the container in which another element resides.
+    </p>
+    <p>
+      <img src="2-1-1-participation-activity.png" alt="parent containers" width="1000">
+    </p>
+    <p>
+      <img src="2-1-2-participation-activity.png" alt="are they parent containers?" width="1000">
+    </p>
+    <p>
+      <img src="2-1-3-participation-activity.png" alt="container structure" width="1000">
+    </p>
+    <h2>Block elements</h2>
+    <p>
+      HTML elements can be categorized as either block or inline. A block element (sometimes called a block-level element) fills the width of the element's
+      parent container and can contain other block elements, inline elements, and text. Block elements include &lt;h1&gt;, &lt;table&gt;, and &lt;p&gt;.
+    </p>
+    <p>
+      Some block elements cannot be contained within certain other block elements when the semantics are unclear. Ex: The &lt;p&gt; element cannot contain another
+      &lt;p&gt; element.
+    </p>
+    <p>
+      A block element is typically displayed starting and ending on new lines. Ex: The &lt;ol&gt; tag is a block tag that fills the entire width of the parent
+      container, and each ordered list starts on a new line separate from previous and following blocks.
+    </p>
+    <p>
+      A &lt;div&gt; element is a generic element for creating block containers to facilitate managing page content and is the only block element with no semantic
+      meaning, unlike other block elements such as &lt;p&gt; and &lt;table&gt;.
+    </p>
+    <!-- NOTE:  -->
+    <p>
+      <em>By default, web browsers do not display container borders. For clarity, the container borders are visible in the following examples.</em>
+    </p>
+    <p>
+      <img src="2-1-1-example-block.png" alt="block elements with visible containers" width="1000">
+    </p>
+    <p>
+      <img src="2-1-4-participation-activity.png" alt="block tags participation activity" width="1000">
+    </p>
+    <h2>Inline elements</h2>
+    <p>
+      An <strong>inline element</strong> fills the minimum space possible in the element's parent container and can only contain text or other inline elements.
+      Ex: The &lt;a&gt; element is an inline element that creates a hyperlink container as big as the link's internal content; a hyperlink does not fill the width
+      or height of the link's parent paragraph.
+    </p>
+    <p>
+      The &lt;span&gt; element is the generic element for creating inline containers to facilitate managing content on the page. Unlike other inline elements,
+      such as &lt;a&gt; and &lt;em&gt;, the &lt;span&gt; element has no semantic meaning.
+    </p>
+    <p>
+      <img src="2-1-2-example-span-tags.png" alt="span tags with visible containers" width="1000">
+    </p>
+    <p>
+      Since &lt;div&gt; and &lt;span&gt; do not have semantic meaning, &lt;div&gt; and &lt;spangt; are used primarily for presentation and interaction purposes.
+      Good practice is to use tags such as &lt;address&gt; and &lt;article&gt; that convey semantic meaning when creating containers, and use &lt;div&gt; and
+      &lt;span&gt; only when no other tags are appropriate.
+    </p>
+    <p>
+      <img src="2-1-5-participation-activity.png" alt="block and inline elements" width="1000">
+    </p>
+    <p>
+      <img src="2-1-6-participation-activity.png" alt="hierarchy of block and inline elements" width="1000">
+    </p>
+    <h2>Block vs. Inline elements in Chrome dev tools</h2>
+    <p>
+      The difference between block and inline elements is visible in Chrome's DevTools. In the screenshot below-left, the mouse hovers over the &lt;p&gt; tag in
+      the DevTools, and a rectangle appears around the entire paragraph in the web page. The rectangle spans the browser width because &lt;p&gt; is a block
+      element. Below-right, the mouse hovers over the &lt;span&gt; tag, but the rectangle is only as wide as the span's contents because &lt;span&gt; is an inline
+      element.
+    </p>
+    <p>
+      <img src="2-1-7-chrome-dev-tools.png" alt="block vs. inline in chrome dev tools" width="1000">
+    </p>
+    <p>
+      <img src="2-1-7-1-participation-activity.png" alt="div tags" width="1000"> <br>
+      <img src="2-1-7-2-participation-activity.png" alt="span tags" width="1000">
+    </p>
+    <p>
+      <img src="2-1-1-challenge-1.png" alt="challenge 1" width="1000">
+    </p>
+    <p>
+      <img src="2-1-1-challenge-2.png" alt="challenge 2" width="1000">
+    </p>
+    <p>
+      <img src="2-1-1-challenge-3.png" alt="challenge 3" width="1000">
+    </p>
+    <p>
+      <img src="2-1-1-challenge-4.png" alt="challenge 4" width="1000">
+    </p>
+    
+
+
+  </body>
+</html>
