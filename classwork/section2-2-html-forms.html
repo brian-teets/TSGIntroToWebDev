@@ -25,7 +25,162 @@
     <p>
       <img src="2-2-1-participation-activity.png" alt="submitting form data to a server" width="1000">
     </p>
+    <p>
+      <img src="2-2-2-participation-activity.png" alt="form tags" width="1000">
+    </p>
+    <h2>GET Method</h2>
+    <p>
+      The <strong>GET method</strong> is a technique used by a web browser to submit information to a web server by altering the URL of the HTTP request.
+      When a user clicks the submit button in a form that uses the GET method, the browser performs the following steps:
+    </p>
+    <ol>
+      <li>
+        Collect all data from the form fields into a query string. The query string is a set of name=value pairs separated by the ampersand character &amp;.
+        Each name is specified as an attribute of the HTML field, and the value is the user-entered data. Ex: The first and last field names and values in the
+        animation below become the string: first=Rick&last=Deckard
+      </li>
+      <li>
+        Create a URL with the server page and name=value pairs. The URL is composed of the action attribute specified in the form, the question mark character
+        ?, and the query string. Ex: http://example.com/apply?first=Rick&last=Deckard
+      </li>
+      <li>
+        Use the newly created URL to create and send an HTTP GET request.
+      </li>
+      <li>
+        Display or update the web page using the HTTP response received from the server.
+      </li>
+    </ol>
+    <p>
+      <img src="2-2-3-participation-activity.png" alt="Using the GET method to submit form data to a server" width="1000">
+    </p>
+    <h3>Warning</h3>
+    <p>
+      <em>
+        Because submitting form data with the GET method places the form data in the URL, the data is visible to anyone who sees the URL. The GET method should
+        not be used to submit private information like phone numbers, credit card information, etc.
+      </em>
+    </p>
+    <p>
+      <img src="2-2-4-participation-activity.png" alt="GET method" width="1000">
+    </p>
+    <h2>POST Method</h2>
+    <p>
+      The <strong>POST method</strong> is a technique used by a web browser to submit information to a web server by sending the information in the HTTP request
+      body. When the user clicks the submit button in a form that uses the POST method, the browser performs the following:
+    </p>
+    <ol>
+      <li>
+        Create an HTTP POST request using the URL from the form's action attribute.
+      </li>
+      <li>
+        Create a query string from the form data. Ex: first=Sarah&last=Connor
+      </li>
+      <li>
+        Place the the query string in the HTTP request message body and send the request.
+      </li>
+      <li>
+        Display or update the web page using the HTTP response received from the server.
+      </li>
+    </ol>
+    <p>
+      The left side of the figure below shows a web page opened in Chrome. The user entered her name Sarah Connor before pressing Submit. On the right, the user
+      has pressed Submit, and the DevTools shows the query string formed by the user data. Although the query string is shown under the "Headers" tab, the data is
+      actually transmitted in the HTTP request body, which resides immediately after the HTTP headers in an HTTP request.
+    </p>
+    <p>
+      <img src="2-2-2-figure-post-request.png" alt="figure of POST request" width="1000">
+    </p>
+    <p>
+      If a form field contains binary data such as an image, the normal format of the query string is not sufficient to encode the binary data. To accommodate
+      binary data, a POST request can be split into multiple parts. The &lt;form&gt; tag's <strong>enctype attribute</strong> value "multipart/form-data"
+      indicates the web browser should split a POST request into multiple parts, where each input field is sent as a separate part of the HTTP request message.
+    </p>
+    <p>
+      <img src="2-2-5-participation-activity.png" alt="using POST method to submit form to server" width="1000">
+    </p>
+    <p>
+      <img src="2-2-6-participation-activity.png" alt="POST method" width="1000">
+    </p>
+    <hr>
+    <h3>Escaping form data</h3>
+    <p>
+      The &amp;, ?, and = characters have special meaning in a query string. If a user enters characters like &amp;, ?, =, or white space characters like space,
+      newline, or tab, the characters must be escaped, meaning the characters must be transformed into other representations. The browser rules for escaping form
+      data are as follows:
+    </p>
+    <ul>
+      <li>Space → +</li>
+      <li>All other reserved characters, newline, and tab → %XX where XX is the ASCII hex value of the character</li>
+    </ul>
+    <p>
+      Ex: If "1 + 2 = ?" is entered into a textbox, the browser escapes the values producing "1+%2B+2+%3D+%3F". 2B is the ASCII hex value for "+", 3D is the
+      ASCII value for "=", and 3F is the ASCII value for "?".
+    </p>
+    <p>
+      The web server <strong>unescapes</strong> the form data to determine what the original values are.
+    </p>
+    <hr>
+    <h2>Form Widgets</h2>
+    <p>
+      A <strong>widget</strong> is an interactive component (usually graphical) that the browser uses to interact with a user. Ex: Buttons, drop-down menus,
+      and data entry fields.
+    </p>
+    <p>
+      The <strong>&lt;input&gt;</strong> tag allows the user to enter information into a web page. The &lt;input&gt; tag cannot enclose any additional page
+      content, and thus does not have a closing tag. The &lt;input&gt; tag has five primary attributes:
+    </p>
+    <ul>
+      <li>
+        The <strong>type attribute</strong> indicates the widget type. Common types include text, password, submit, and button.
+      </li>
+      <li>
+        The <strong>name attribute</strong> names the widget and sends the widget's value when the widget's form is submitted.
+      </li>
+      <li>
+        The <strong>id attribute</strong> is used to give a widget a unique identifier.
+      </li>
+      <li>
+        The <strong>placeholder attribute</strong> specifies text that first appears in a text widget, typically for giving the user a hint as to the
+        expected value.
+      </li>
+      <li>
+        The <strong>value attribute</strong> specifies a default value for a widget.
+      </li>
+    </ul>
+    <p>
+      A <strong>text box</strong> widget is an input element with the type attribute of "text" that allows users to enter a single line of text.
+    </p>
+    <p>
+      The web browser displays a <strong>submit button</strong> widget for an &lt;input&gt; tag with the type attribute of "submit", which sends the
+      associated form's data to the server when clicked. A submit button uses the value attribute to specify the button's text.
+    </p>
+    <p>
+      The HTML below asks for a message to tweet. The text box widget does not use the value attribute because no default tweet message makes sense.
+      The submit button does not use the name attribute because the submit button's value is not needed by the web server.
+    </p>
+    <p>
+      <img src="2-2-3-figure.png" alt="HTML form sending status from textbox" width="750">
+    </p>
+    <p>
+      <img src="2-2-7-participation-activity.png" alt="matching the input attributes" width="1000">
+    </p>
+    <h2>Lables and text areas</h2>
+    <p>
+      The <strong>&lt;label&gt;</strong> tag displays descriptive text associated with a specific widget. A label has a <strong>for attribute</strong> whose
+      value should match the id attribute for the widget being labeled.
+    </p>
+    <p>
+      <img src="2-2-4-figure.png" alt="HTML for a lable associated to a textbox" width="500">
+    </p>
+    <p>
+      A <strong>text area</strong> widget is an input element specified by &lt;textarea&gt; opening and closing tags that allows users to enter multiple lines
+      of text. A &lt;textarea&gt; tag has optional rows and cols attributes to specify the initial size of the text area.
+    </p>
+    <p>
+      <img src="2-2-5-figure.png" alt="HTML for a textarea" width="700">
+    </p>
     
+
 
   </body>
 </html>
