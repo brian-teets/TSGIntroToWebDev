@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Common HTML form widgets</title>
+  </head>
+  <body>
+    <h1>2.3 Common HTML Form Widgets</h1>
+    <h2>Checkbox</h2>
+    <p>
+      A <strong>checkbox</strong> is a widget for input elements with the type attribute of "checkbox", which allows users to check, or select, a value.
+      A checkbox initially appears selected if the checked attribute is set. Ex: &lt;input type="checkbox" checked&gt; creates a checked checkbox. The
+      <strong>checked attribute</strong> is an example of a <strong>boolean attribute</strong>. A boolean attribute is an attribute that is true when present and
+      false when absent. No value must be assigned to a boolean attribute.
+    </p>
+    <p>
+      For each checkbox selected, the browser sends the checkbox's name and value to the server. If the value attribute is not specified, the default value of
+      "on" is sent. If a checkbox is not selected, the browser does not send anything to the server. A <u>common error</u> on the server is failing to record all
+      checkboxes in the form as the browser doesn't report any values for checkboxes not selected by the user.
+    </p>
+    <p>
+      <u>Good practice</u> is to use label elements with checkboxes so the user can click the label to check and uncheck the associated checkbox.
+    </p>
+    <p>
+      <img src="2-3-1-participation-activity.png" alt="submitting checkboxes to the server" width="750">
+    </p>
+    <p>
+      <img src="2-3-2-participation-activity.png" alt="add a new checkbox" width="850">
+    </p>
+    <h2>Radio button</h2>
+    <p>
+      A <strong>radio button</strong> is a widget for input elements with the type attribute of "radio", which allows users to select exactly one value from
+      possibly many values. The web browser groups radio buttons together with the same name attribute, where each possible value in a group has an associated
+      input. When submitting a form, the browser sends the selected radio button's name and value attribute. Ex: If the radio button &lt;input type="radio"
+      name="movie" value="ET"&gt; is selected, "movie=ET" is sent to the server.
+    </p>
+    <p>
+      The main difference between a radio button and checkbox is that only one radio button in a group can be selected, while any number of checkboxes can
+      be selected.
+    </p>
+    <p>
+      <img src="2-3-3-participation-activity.png" alt="add radio group" width=750>
+    </p>
+    <p>
+      <img src="2-3-4-participation-activity.png" alt="checkboxes and radio buttons" width="850">
+    </p>
+    <h2>Drop-down menu</h2>
+    <p>
+      The <strong>&lt;select&gt;</strong> opening and closing tags create a <strong>drop-down menu</strong> (or <strong>drop-down list</strong>), which allows
+      users to select one of several predefined values. The <strong>&lt;option&gt;</strong> opening and closing tags create a value, or option, the user can
+      select within a drop-down menu. When the user is not interacting with the menu, the drop-down menu usually displays the selected option.
+    </p>
+    <p>
+      The difference between a drop-down menu and a radio button widget is that the drop-down menu only displays the options when interacting with the user,
+      while a radio button widget always displays all options.
+    </p>
+    <p>
+      <img src="2-3-1-figure.png" alt="figure of dropdown menu list" width="450">
+    </p>
+    
+
+
+  </body>
+</html>
