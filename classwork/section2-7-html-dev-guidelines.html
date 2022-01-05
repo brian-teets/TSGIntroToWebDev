@@ -6,6 +6,31 @@
   </head>
   <body>
     <h1>2.7 HTML developer guidelines</h1>
+    <p>
+      The following developer guidelines are helpful best practices for web development. Although the guidelines and suggestions are not mandatory,
+      <u>good practice</u> is to consistently follow the guidelines, which results in maintainable web pages and helps avoid errors. Cleanly-organized HTML is
+      also easier to read and understand by other developers.
+    </p>
+    <h2>Use closing tags</h2>
+    <p>
+      For tags that have a closing tag, always use the closing tag to mark the end of the tag content. Ex: Standard HTML does not require closing &lt;/p&gt; tags
+      because the web browser can infer the ending of a paragraph, but always including the &lt;/p&gt; closing tag to end the paragraph explicitly is safer. A
+      <u>common error</u> is to expect all web browsers to add a missing closing tag at the same location in the HTML.
+    </p>
+    <h2>Avoid self-closing tags</h2>
+    <p>
+      A self-closing tag is an open tag that also closes by putting a forward slash at the end of the tag. Ex: &lt;br /&gt;. Standard HTML does not require or
+      promote using self-closing tags for void elements. Ex: Use &lt;brgt; not &lt;br /&gt;, and use &lt;img ... &gt; not &lt;img ... /&gt;.
+    </p>
+    <p>
+      <img src="2-7-1-participation-activity.png" alt="using closing tags" width="950">
+    </p>
+    <h2>Use quotes for attributes values</h2>
+    <p>
+      Always use quotes around attributes values. Ex: Use value="Start" instead of value=Start. While HTML does not require quotes around an attribute value that
+      does not contain a space, a common error is forgetting the quotes for attribute values that contain spaces. Ex: value=Start animation is illegal and results
+      in an error.
+    </p>
     
 
   </body>
