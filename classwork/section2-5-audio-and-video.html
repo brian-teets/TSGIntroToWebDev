@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Audio and Video</title>
+  </head>
+  <body>
+    <h1>2.5 Audio and Video</h1>
+    <h2>Browser plugins</h2>
+    <p>
+      A website may play media files consisting of audio or video for website visitors. Prior to HTML5, developers used <strong>&lt;embed&gt;</strong> and
+      <strong>&lt;object&gt;</strong> elements to embed audio or video in a web page. The embedded audio or video required browser plug-ins to play the media.
+      A browser <strong>plug-in</strong> is software that can properly read and interpret a file format that the browser cannot. Ex: The Flash Player plug-in
+      allows a browser to play Flash files. Plug-ins have traditionally been a source of security risks for web browsers, and some browsers have stopped
+      supporting some types of plug-ins.
+    </p>
+    <p>
+      <img src="2-5-1-figure.png" alt="figure with and without flash plugin" width="795">
+    </p>
+    <p>
+      <img src="2-5-1-participation-activity.png" alt="browser plugins" width="785">
+    </p>
+    <h2>Audio element</h2>
+    <p>
+      The <strong>&lt;audio&gt;</strong> element plays an audio file in a web page. The <strong>&lt;source&gt;</strong> element is used inside the &lt;audio&gt;
+      tag to specify an audio file to play. Some common lt;audiogt; attributes include:
+    </p>
+    <ul>
+      <li><strong>autoplay</strong> - Boolean attribute that makes the audio begin playing automatically.</li>
+      <li><strong>controls</strong> - Boolean attribute that displays audio controls for the user to play, pause, and control the volume.</li>
+      <li><strong>loop</strong> - Boolean attribute that replays the audio upon reaching the end of the audio.</li>
+      <li><strong>muted</strong> - Boolean attribute that initially mutes the audio.</li>
+    </ul>
+    <p>
+      Note: Some browsers block &lt;audio autoplay&gt; from autoplaying so users are not jolted with sound when visiting a web page.
+    </p>
+    <p>
+      <img src="2-5-2-participation-activity.png" alt="adding audio controls to audio tag" width="1000">
+    </p>
+    <p>
+      <audio autoplay loop muted controls>
+        <source src="https://resources.zybooks.com/WebProgramming/tyops_vivaldi-meets-hip-hop.mp3">
+      Your browser does not support the audio element.
+      </audio>
+    </p>
+    <p>
+      Different web browsers support different audio formats, so multiple &lt;source&gt; tags can be used to supply alternate file formats. The MP3 and AAC
+      formats have wide browser support.
+    </p>
+    <p>
+      <img src="2-5-1-table.png" alt="common audio formats" width="1000">
+    </p>
+    <p>
+      <img src="2-5-3-participation-activity.png" alt="audio element review" width="1000">
+    </p>
+    <h2>Video element</h2>
+    <p>
+      The <strong>&lt;video&gt;</strong> element displays a video in a web page. The &lt;source&gt; element is used in a &lt;video&gt; tag to specify the name of
+      the video file to play. Some common &lt;video&gt; attributes include:
+    </p>
+    <ul>
+      <li><strong>autoplay</strong> - Boolean attribute that makes the video begin playing automatically.</li>
+      <li><strong>controls</strong> - Boolean attribute that displays video controls for the user to play, pause, and control the volume.</li>
+      <li><strong>loop</strong> - Boolean attribute that replays the video upon reaching the end of the video.</li>
+      <li><strong>muted</strong> - Boolean attribute that initially mutes the video.</li>
+      <li><strong>width</strong> - Specifies the pixel width of the video's display area.</li>
+    </ul>
+    <p>
+      Some browsers will not autoplay a video unless the video is muted. Ex: &lt;video autoplay muted&gt; will play a muted video successfully in all browsers.
+      Muted video is less jarring to users when visiting a web page.
+    </p>
+    <p>
+      <img src="2-5-4-participation-activity.png" alt="adding additional video controls" width="1000">
+    </p>
+    <p>
+      <video autoplay muted controls width="300">
+        <source src="https://resources.zybooks.com/WebProgramming/subway.mp4">
+      </video>
+    </p>
+    <p>
+      Different web browsers support different video formats, mainly because of patent issues. Multiple &lt;source&gt; tags can be used to supply alternate file
+      formats. MP4, WebM, and Ogg are ideal video formats for playing video on the web.
+    </p>
+    <p>
+      <img src="2-5-2-table.png" alt="table of common video formats" width="1000">
+    </p>
+    <p>
+      <img src="2-5-5-participation-activity.png" alt="video element review" width="1000">
+    </p>
+    <h3>Controlling video playback with JavaScript</h3>
+    <p>
+      <em>
+        The audio and video elements can be controlled with JavaScript. Ex: JavaScript can start and stop audio, change the volume, and jump to a specific
+        location in a video. See the HTMLMediaElement link in Exploring further below for a list of JavaScript properties and methods to control audio and video.
+      </em>
+    </p>
+    <h2>Showing YouTube videos</h2>
+    <p>
+      A YouTube video may be embedded in a web page with the &lt;iframe&gt; element. The <strong>&lt;iframe&gt;</strong> element allows a web page to be
+      embedded in a rectangular area of the current web page. The &lt;iframe&gt; element uses the src attribute to specify the URL of the web page to display and
+      the width and height attributes to define the width and height in pixels of the rectangular iframe.
+    </p>
+    <p>
+      The YouTube Help pages give instructions for <a href="https://support.google.com/youtube/answer/57407?hl=en">uploading a video</a> to YouTube and
+      <a href="https://support.google.com/youtube/answer/171780?hl=en">embedding a video</a> into a web page.
+    </p>
+    <p>
+      <img src="2-5-6-participation-activity.png" alt="editing YouTube iframe attributes" width="1000">
+    </p>
+    <p>
+      <strong><em>Here's the iframe code:</em></strong>
+    </p>
+    <p>
+      &lt;iframe width="460" height="250" src="https://www.youtube.com/embed/g4hvUvBmoaA?rel=0&autoplay=1&mute=1"&gt;
+      &lt;/iframe&gt;
+    </p>
+    <p>
+      <img src="2-5-7-participation-activity.png" alt="YouTube iframe review" width="1000">
+    </p>
+    <hr>
+    <h4>Explore further:</h4>
+    <ul>
+      <li>
+        <a href="http://www.w3schools.com/html/html5_video.asp">HTML5 video</a> from W3Schools
+      </li>
+      <li>
+        <a href="http://www.w3schools.com/html/html5_audio.asp">HTML5 audio</a> from W3Schools
+      </li>
+      <li>
+        <a href="http://www.w3schools.com/html/html_object.asp">HTML5 plugins</a> from W3Schools
+      </li>
+      <li>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats">Media formats supported by the HTML audio and video
+        elements</a> from MDN
+      </li>
+      <li>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement">HTMLMediaElement</a> from MDN
+      </li>
+    </ul>
+    
+
+
+  </body>
+</html>

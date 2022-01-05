@@ -57,8 +57,89 @@
     <p>
       <img src="2-3-1-figure.png" alt="figure of dropdown menu list" width="450">
     </p>
+    <h2>List Box</h2>
+    <p>
+      A <strong>list box</strong> widget is created by specifying a size with the select element's size attribute. Ex: &lt;select size="4"&gt; creates a list
+      box that shows four options at a time. If the list box contains more than size options, the browser adds a vertical scrollbar so the user can scroll through
+      the list of options.
+    </p>
+    <p>
+      The multiple attribute allows the user to select multiple options. On Windows, the user must hold down the control (Ctrl) button to select multiple options,
+      and on a Mac, the user must hold down the command button. Many users are unaware of how to choose multiple options from a list box, so <u>good practice</u>
+      is to use checkboxes instead.
+    </p>
+    <p>
+      <img src="2-3-2-figure.png" alt="list box that allows multiple options to be selected" width="450">
+    </p>
+    <h2>Buttons</h2>
+    <p>
+      A <strong>button</strong> widget can be created using the <strong>&lt;button&gt;</strong> opening and closing tags or with &lt;input type="button"&gt;.
+      The &lt;button&gt; element allows text and images to be displayed in a button, but an &lt;input&gt; button only allows text.
+    </p>
+    <p>
+      The &lt;button&gt; element has a type attribute that can be set to various values like "button" or "submit". The "button" type is typically used with
+      JavaScript to perform an action when clicked. The "submit" type creates a submit button for a form. If the type attribute is not specified, different
+      browsers may choose different default types, so <u>good</u> practice is to always specify the type.
+    </p>
+    <p>
+      <img src="2-3-3-figure.png" alt="HTML buttons" width="450">
+    </p>
+    <p>
+      <img src="2-3-styling-widgets.png" alt="styling widgets" width="850">
+    </p>
+    <h2>Password field</h2>
+    <p>
+      A <strong>password field</strong> is a widget for input elements with the type attribute of "password", which allows users to enter a password without
+      the password contents being displayed on-screen. Web browsers usually provide facilities to remember passwords at various websites to help users.
+    </p>
+    <p>
+      Forms that submit passwords or any sensitive data should always submit with URLs that use HTTPS. Form data submitted with HTTP are not encrypted, but
+      HTTPS encrypts form data.
+    </p>
+    <p>
+      The HTML below uses the size attribute to limit the password field's width and uses the maxlength attribute to limit the maximum number of characters
+      the user can enter. The size and maxlength attributes can be used on text boxes as well.
+    </p>
+    <p>
+      <img src="2-3-4-figure.png" alt="password field that limits the number of characters to 10" width="650">
+    </p>
+    <h2>Fieldset</h2>
+    <p>
+      The <strong>&lt;fieldset&gt;</strong> tag groups related form widgets together and draws a box around the related widgets. The &lt;legend&gt; tag defines a
+      caption for a &lt;fieldset&gt;.
+    </p>
+    <p>
+      <img src="2-3-5-figure.png" alt="fieldset around related radio buttons" width="650">
+    </p>
+    <p>
+      <img src="2-3-5-participation-activity.png" alt="menus, buttons, and passwords" width="850">
+    </p>
+    <p>
+      <img src="2-3-1-1-challenge-activity.png" alt="add checkboxes" width="900">
+    </p>
+    <p>
+      <img src="2-3-1-2-challenge-activity.png" alt="add radio" width="900">
+    </p>
+    <p>
+      <img src="2-3-1-3-challenge-activity.png" alt="add dropdown list" width="900">
+    </p>
+    <p>
+      <img src="2-3-1-4-challenge-activity.png" alt="add password widget" width="900">
+    </p>
+    <hr>
+    <h4>Exploring further:</h4>
+    <ul>
+      <li>
+        <a href="https://www.w3schools.com/tags/tag_input.asp">HTML &lt;input&gt; tag</a> from W3Schools
+      </li>
+      <li>
+        <a href="http://www.w3schools.com/tags/tag_select.asp">HTML &lt;select&gt; tag</a> from W3Schools
+      </li>
+      <li>
+        <a href="http://www.w3schools.com/tags/tag_button.asp">HTML &lt;button&gt; tag</a> from W3Schools
+      </li>
+    </ul>
     
-
 
   </body>
 </html>

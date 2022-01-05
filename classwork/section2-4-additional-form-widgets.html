@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Additional form widgets</title>
+  </head>
+  <body>
+    <h1>2.4 Additional form widgets</h1>
+    <h2>Date picker</h2>
+    <p>
+      An <strong>input picker</strong> is a widget that allows the user to interactively pick a choice using a popup or other guided selection method. The
+      <strong>date picker</strong> is an input picker that allows the user to enter a date or choose a date from a calendar popup.
+    </p>
+    <p>
+      The basic syntax for the date picker is &lt;input type="date"&gt;. Two common attributes for the date input are min (the earliest date permitted) and
+      max (the latest date permitted).
+    </p>
+    <p>
+      <img src="2-4-1-example.png" alt="date picker" width="500">
+    </p>
+    <h2>Color picker</h2>
+    <p>
+      Clicking on the <strong>color picker</strong> creates a color selector popup that helps the user explore and choose a color.
+    </p>
+    <p>
+      The basic syntax for the color picker is &lt;input type="color"&gt;.
+    </p>
+    <p>
+      <img src="2-4-2-example.png" alt="color picker" width="500">
+    </p>
+    <h2>Number input</h2>
+    <p>
+      The <strong>number input</strong> ensures user input is a valid number.
+    </p>
+    <p>
+      The basic syntax for the number input is &lt;input type="number"&gt;. The min and max attributes are commonly used with the number input.
+    </p>
+    <p>
+      <img src="2-4-3-example.png" alt="number input example" width="575">
+    </p>
+    <h2>Range input</h2>
+    <p>
+      The <strong>range input</strong> widget allows the user to select a value by dragging a sliding control along the length of a line.
+    </p>
+    <p>
+      The basic syntax for the range input is &lt;input type="range"&gt;. Three commonly used attributes for the range input are min, max, and value.
+    </p>
+    <p>
+      <img src="2-4-4-example.png" alt="range input slider" width="375">
+    </p>
+    <h2>Combo box</h2>
+    <p>
+      A <strong>combo box</strong> is the combination of a text box and drop-down menu into a single widget. A combo box is created with an &lt;input&gt; element,
+      which creates the text box, and a <strong>&lt;datalist&gt;</strong> element, which provides the drop-down list options.
+    </p>
+    <p>
+      <img src="2-4-5-example.png" alt="combo box widget example" width="575">
+    </p>
+    <h2>Specialized text input</h2>
+    <p>
+      Four input types exist for entering specific types of text:
+    </p>
+    <ul>
+      <li><strong>url</strong> - For typing a URL</li>
+      <li><strong>tel</strong> - For typing a telephone number</li>
+      <li><strong>email</strong> - For typing an email address</li>
+      <li><strong>search</strong> - For typing search terms</li>
+    </ul>
+    <p>
+      Most mobile browsers display keyboards configured for entering the input type.
+    </p>
+    <p>
+      <img src="2-4-6-example.png" alt="mobile browser keyboards for tel and email types" width="595">
+    </p>
+    <p>
+      <img src="2-4-1-participation-activity.png" alt="date and time related widgets" width="615">
+    </p>
+    <p>
+      <img src="2-4-2-participation-activity.png" alt="input types" width="815">
+    </p>
+    <h2>Input attributes</h2>
+    <p>
+      Input attributes that restrict user input are listed in the table below.
+    </p>
+    <p>
+      <img src="2-4-1-table.png" alt="input attributes that restrict user input" width="970">
+    </p>
+    <p>
+      <img src="2-4-2-participation-activity.png" alt="input attributes" width="815">
+    </p>
+    <h2>Fallbacks and polyfills</h2>
+    <p>
+      Not all widgets and attributes are fully supported by all browsers. Ex: Older browsers may not show a color input picker, so users must instead enter a
+      hex string representing the red, green, and blue values of the color, like #4268D3, into a text input field.
+    </p>
+    <p>
+      A <strong>fallback</strong> is a mechanism that allows a web page element to function correctly even if the browser does not support a particular element.
+      <u>Good practice</u> is to implement a fallback mechanism if a particular widget is not widely supported by browsers at the time.
+    </p>
+    <p>
+      A <strong>polyfill</strong> is a fallback using JavaScript code that makes certain HTML features (Ex: the date picker) work on browsers that do not
+      natively support those features. Developers often use a JavaScript library such as Modernizr to detect which features the browser does not support, and
+      then load one or more polyfills to provide fallback mechanisms for the non-supported features.
+    </p>
+    <p>
+      <img src="2-4-7-example.png" alt="example of polyfil date picker" width="975">
+    </p>
+    <p>
+      <img src="2-4-4-participation-activity.png" alt="fallbacks and polyfills quiz" width="975">
+    </p>
+    <hr>
+    <h4>Explore further:</h4>
+    <ul>
+      <li>
+        <a href="https://www.w3.org/wiki/HTML/Elements/input/date">W3 Consortium offial date input element description</a>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Modernizr">Wikipedia article on Modernizr</a>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Polyfill_(programming)">Wikipedia article on polyfills</a>
+      </li>
+      <li>
+        <a href="http://caniuse.com/">Check browser feature support at caniuse.com</a>
+      </li>
+    </ul>
+    
+
+
+  </body>
+</html>

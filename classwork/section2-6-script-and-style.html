@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>script and style</title>
+  </head>
+  <body>
+    <h1>2.6 &lt;script&gt; and &lt;style&gt;</h1>
+    <p>
+      The <strong>&lt;script&gt;</strong> tag allows a web page to include executable code, which the browser assumes to be JavaScript unless indicated otherwise.
+      The optional <strong>type attribute</strong> is used to indicate the content type when the content is not JavaScript. The <strong>src attribute</strong>
+      provides the URL of an external file containing JavaScript code. If a &lt;script&gt; tag does not have the src attribute, then the JavaScript code is
+      contained directly within the tag. The HTML below shows two ways the &lt;script&gt; tag can be used.
+    </p>
+    <p>
+      <img src="2-6-1-example.png" alt="two ways of using script tags" width="750">
+    </p>
+    <p>
+      <em>With either script, a pop up box will be displayed immediately when the page loads.</em>
+    </p>
+    <ul>
+      <li>
+        &lt;script src="https://example.com/interactive_content.js"&gt;&lt;/script&gt;
+      </li>
+      <li>
+        &lt;script type="text/javascript"&gt; <br>
+          alert("Hello, World!"); <br>
+        &lt;/script&gt;
+      </li>
+    </ul>
+    <!-- uncomment this javascript to run upon page load: -->
+    <!--
+    <script type="text/javascript">
+      alert("Hello, World!");
+    </script>
+   -->
+   <p>
+     A <u>common error</u> is to forget the closing &lt;/script&gt; tag when using the src attribute. Even when the JavaScript code is located in a separate
+     external file, the closing &lt;/script&gt; tag must be included.
+   </p>
+   <p>
+     <u>Good practice</u> is to use the src attribute to separate content and functionality and promote modularity. An external JavaScript file can be edited
+    separately from an HTML file, which allows a web page's interactive content to be updated even if the content is unchanged. A separate JavaScript file can
+    also be reused on many web pages to provide the same functionality for different pieces of content. Additionally, when the JavaScript file is separate, a
+    browser that doesn't understand JavaScript, such as a screenreader for blind users, can avoid downloading the JavaScript file that will not be used.
+   </p>
+   <p>
+     The <strong>&lt;style&gt;</strong> tag allows the web page to introduce presentational directives, usually CSS. A &lt;style&gt; tag is placed in an HTML
+    document prior to the &lt;body&gt; tag, because the style section is designed to describe the presentation of the entire document. Although only needed for
+    non-CSS content and rarely used, the &lt;style&gt; tag has an optional type attribute that describes the content inside the tag.
+   </p>
+   <p>
+     <img src="2-6-2-example.png" alt="example using the style tag" width="550">
+   </p>
+   <h3>Note</h3>
+   <p>
+     <em>
+       Unlike all other HTML tags, the contents within the &lt;script&gt; and &lt;style&gt; tags are not displayed by the browser. The &lt;script&gt; and
+      &lt;style&gt; tags' purpose is to provide interactive functionality and presentational styling.
+     </em>
+   </p>
+   <p>
+     <img src="2-6-1-participation-activity.png" alt="script and style tag review" width="1000">
+   </p>
+   
+
+  </body>
+</html>
