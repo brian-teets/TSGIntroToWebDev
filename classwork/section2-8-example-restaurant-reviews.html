@@ -11,7 +11,412 @@
       This section presents an example restaurant review website. The website collects reviews from users and displays the reviews on each restaurant's
       details page.
     </p>
-    
+    <p>
+      <img src="2-8-1-figure.png" alt="wireframes of restaurant review pages" width="750">
+    </p>
+    <h2>Home page</h2>
+    <p>
+      The home page for Restaurant Reviews is index.html, which is a common filename for a website's home page. Most web servers by default serve the
+      <strong>index.html</strong> file when a URL does not specify an explicit filename. Ex: Accessing http://cs.harding.edu/ in a web browser loads
+      http://cs.harding.edu/index.html.
+    </p>
+    <p>
+      To maintain a consistent look, all the website's pages have the same &lt;header&gt; tags with navigation links and &lt;footer&gt; tags that specify the
+      copyright information. The home page is broken into several sections with &lt;section&gt; tags, and each of the featured restaurants are assigned to a
+      section.
+    </p>
+    <!-- starter restaurant review home page html: -->
+    <!-- <!DOCTYPE html>
+<html lang="en">
+   <meta charset="UTF-8">
+   <title>Restaurant Reviews</title>
+   <body>
+      <header>
+         <h1>Restaurant Reviews</h1>
+         <nav>
+            <a href="index.html">Home</a> &nbsp;
+            <a href="addreview.html">Add Review</a> &nbsp;
+            <a href="about.html">About</a>
+         </nav>
+      </header>
+
+      <main>
+         <section>
+            <p>
+               You've come to the right place to find a great restaurant near you!
+            </p>
+         </section>
+         <section>
+            <h2><a href="mainstreetcafe.html">Main Street Cafe</a></h2>
+            <a href="mainstreetcafe.html"><img src="https://static-resources.zybooks.com/static/mainstreetcafe.jpg" alt="Inside Main Street Cafe"></a>
+            <p>
+               <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+               <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+               <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+               <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+               <img src="https://static-resources.zybooks.com/static/star_half.png" alt="Half star">
+            </p>
+            <p>
+               Featuring a wide variety of food including burgers, chicken, and sandwiches.
+            </p>
+         </section>
+         <section>
+            <h2><a href="greekhouse.html">Greek House</a></h2>
+            <a href="greekhouse.html"><img src="https://static-resources.zybooks.com/static/greekhouse.jpg" alt="Bread from Greek House"></a>
+            <p>
+               <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+               <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+               <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+               <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+            </p>
+            <p>
+               Greek food at its best in a charming setting.
+            </p>
+         </section>
+      </main>
+
+      <footer>
+         <p>
+            &copy; 2018 Restaurant Reviews
+         </p>
+      </footer>
+
+   </body>
+</html>
+ -->
+  <p>
+    <img src="2-8-2-participation-activity.png" alt="home page example" width="950">
+  </p>
+  <h2>Detail pages</h2>
+  <p>
+    The website provides detailed restaurant reviews when the user clicks the restaurant name on the home page. Only two restaurants are listed, so only
+    two detail web pages are required for this example:
+  </p>
+  <ol>
+    <li>mainstreetcafe.html - Details about Main Street Cafe</li>
+    <li>greekhouse.html - Details about Greek House</li>
+  </ol>
+  <h3>Dynamically-built web pages</h3>
+  <p>
+    <em>
+      As individuals enter new reviews, the static detail web pages need to be updated continually. Usually a website that displays frequently-changing content
+      uses a server-side program to dynamically create web pages from data stored in a database. This example, however, uses static content for simplicity.
+    </em>
+  </p>
+  <!-- HTML for mainstreetcafe.html. -->
+  <!--
+  <!DOCTYPE html>
+  <html lang="en">
+     <meta charset="UTF-8">
+     <title>Restaurant Reviews: Main Street Cafe</title>
+     <body>
+        <header>
+           <h1>Restaurant Reviews</h1>
+           <nav>
+              <a href="index.html">Home</a> &nbsp;
+              <a href="addreview.html">Add Review</a> &nbsp;
+              <a href="about.html">About</a>
+           </nav>
+        </header>
+
+        <main>
+           <h1>Main Street Cafe</h1>
+           <img src="https://static-resources.zybooks.com/static/mainstreetcafe.jpg" alt="Inside Main Street Cafe">
+           <p>
+              <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+              <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+              <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+              <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+              <img src="https://static-resources.zybooks.com/static/star_half.png" alt="Half star">
+           </p>
+           <section>
+              <h2>Overview</h2>
+              <p>
+                 Cuisine: American, Grill, Gluten Free Options
+              </p>
+              <p>
+                 Price: $ - $$
+              </p>
+              <p>
+                 Featuring a wide variety of food including burgers, chicken, sandwiches, and soup.
+              </p>
+           </section>
+           <section>
+              <h2>Reviews</h2>
+              <div>
+                 <p>
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                 </p>
+                 <p>
+                    Terry: The food was excellent although the wait was terribly long.
+                 </p>
+              </div>
+              <div>
+                 <p>
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                 </p>
+                 <p>
+                    Julio: My favorite place to eat in Anytown! The Super Deluxe Burger is mouth-watering!
+                 </p>
+              </div>
+              <div>
+                 <p>
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star_half.png" alt="Half star">
+                 </p>
+                 <p>
+                    Avery: Everything on the menu is delicious, and the prices aren't bad.
+                 </p>
+              </div>
+           </section>
+        </main>
+
+        <footer>
+           <p>
+              &copy; 2018 Restaurant Reviews
+           </p>
+        </footer>
+
+     </body>
+  </html>
+
+  -->
+  <!-- HTML for greekhouse.html. -->
+  <!--
+  <!DOCTYPE html>
+  <html lang="en">
+     <meta charset="UTF-8">
+     <title>Restaurant Reviews: Greek House</title>
+     <body>
+        <header>
+           <h1>Restaurant Reviews</h1>
+           <nav>
+              <a href="index.html">Home</a> &nbsp;
+              <a href="addreview.html">Add Review</a> &nbsp;
+              <a href="about.html">About</a>
+           </nav>
+        </header>
+
+        <main>
+           <h1>Greek House</h1>
+           <img src="https://static-resources.zybooks.com/static/greekhouse.jpg" alt="Bread from Greek House">
+           <p>
+              <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+              <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+              <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+              <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+           </p>
+           <section>
+              <h2>Overview</h2>
+              <p>
+                 Cuisine: Greek, Mediterranean
+              </p>
+              <p>
+                 Price: $$$
+              </p>
+              <p>
+                 Greek food at its best in a charming setting.
+              </p>
+           </section>
+           <section>
+              <h2>Reviews</h2>
+              <div>
+                 <p>
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star_half.png" alt="Half star">
+                 </p>
+                 <p>
+                    Andrew: My wife and I celebrated our anniversary here and loved it.
+                 </p>
+              </div>
+              <div>
+                 <p>
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star_half.png" alt="Half star">
+                 </p>
+                 <p>
+                    Pamela: My gyro was cold, and they forgot the tzatziki sauce. Otherwise not bad.
+                 </p>
+              </div>
+              <div>
+                 <p>
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                    <img src="https://static-resources.zybooks.com/static/star.png" alt="star">
+                 </p>
+                 <p>
+                    Greg: It's a little expensive, but the atmosphere is fantastic.
+                 </p>
+              </div>
+           </section>
+        </main>
+
+        <footer>
+           <p>
+              &copy; 2018 Restaurant Reviews
+           </p>
+        </footer>
+
+     </body>
+  </html>
+
+  -->
+  <p>
+    <img src="2-8-3-participation-activity.png" alt="detail pages" width="950">
+  </p>
+  <h2>Add review pages</h2>
+  <p>
+    The Add Review web page displays a form for the user to submit a restaurant review. Normally the form would post the review to a server-side program that
+    would save the review in a database. The example below posts the review to the zyBooks server, which only displays the submitted form values.
+  </p>
+  <!-- HTML for addreview.html.  -->
+  <!--
+  <!DOCTYPE html>
+  <html lang="en">
+     <meta charset="UTF-8">
+     <title>Restaurant Reviews - Add Review</title>
+     <body>
+        <header>
+           <h1>Restaurant Reviews</h1>
+           <nav>
+              <a href="index.html">Home</a> &nbsp;
+              <a href="addreview.html">Add Review</a> &nbsp;
+              <a href="about.html">About</a>
+           </nav>
+        </header>
+
+        <main>
+           <h2>Add Review</h2>
+           <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+              <div>
+                 <label for="name">Name?</label>
+                 <input type="text" id="name" name="name" required>
+              </div>
+              <div>
+                 <label for="restaurant">Restaurant?</label>
+                 <select id="restaurant" name="restaurant" required>
+                    <option value="">Choose one...</option>
+                    <option>Charlie's Pizza</option>
+                    <option>El Paraiso</option>
+                    <option>Greek House</option>
+                    <option>Main Street Cafe</option>
+                    <option>Whilma's Filipino Restaurant</option>
+                 </select>
+              </div>
+              <div>
+                 <label for="visit-date">Date of visit?</label>
+                 <input type="date" name="visit-date" id="visit-date" required>
+              </div>
+              <div>
+                 <label for="rating">Rating?</label>
+                 <input type="number" id="rating" name="rating" min="1" max="5" step="0.5" value="5" required>
+              </div>
+              <div>
+                 <label for="details">Details?</label>
+                 <textarea id="details" name="details" rows="5" cols="40" required></textarea>
+              </div>
+              <button>Submit</button>
+           </form>
+        </main>
+
+        <footer>
+           <p>
+              &copy; 2018 Restaurant Reviews
+           </p>
+        </footer>
+
+     </body>
+  </html>
+
+  -->
+  <h2>About web page</h2>
+  <p>
+    The About page displays information about the website, including an embedded Google Map showing the location of the Restaurant Review headquarters.
+  </p>
+  <!-- HTML for about.html. -->
+  <!--
+  <!DOCTYPE html>
+  <html lang="en">
+     <meta charset="UTF-8">
+     <title>Restaurant Reviews - About</title>
+     <body>
+        <header>
+           <h1>Restaurant Reviews</h1>
+           <nav>
+              <a href="index.html">Home</a> &nbsp;
+              <a href="addreview.html">Add Review</a> &nbsp;
+              <a href="about.html">About</a>
+           </nav>
+        </header>
+
+        <main>
+           <section>
+              <h2>About</h2>
+              <p>
+                 Restaurant Reviews is a website that collects user reviews for restaurants.
+              </p>
+           </section>
+
+           <section>
+              <h2>Disclaimer</h2>
+              <p>
+                 All reviews on this website are written by our website users and should not
+                 be regarded as an endorsement of any particular restaurant by Restaurant Reviews.
+              </p>
+           </section>
+           <section>
+              <h2>Contact Us</h2>
+              <address>
+                 <p>
+                 Email: <a href="mailto:restaurantreviews@email.com">restaurantreviews@email.com</a><br>
+                 Phone: <a href="tel:111-222-3333">111-222-3333</a>
+                 </p>
+                 <p>
+                    Restaurant Reviews<br>
+                    7361 Curry Ford Rd<br>
+                    Orlando, FL 32822
+                 </p>
+              </address>
+
+              <div class="mapouter">
+                 <iframe width="600" height="500"
+                    src="https://maps.google.com/maps?q=7361%20Curry%20Ford%20Rd%2C%20Orlando%2C%20FL%2032822&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                 </iframe>
+              </div>
+           </section>
+        </main>
+
+        <footer>
+           <p>
+              &copy; 2018 Restaurant Reviews
+           </p>
+        </footer>
+
+     </body>
+  </html>
+
+  -->
+  <p>
+    <img src="2-8-5-participation-activity.png" alt="about page" width="950">
+  </p>
+  
 
   </body>
 </html>
