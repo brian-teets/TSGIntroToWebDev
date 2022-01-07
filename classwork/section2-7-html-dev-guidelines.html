@@ -31,6 +31,123 @@
       does not contain a space, a common error is forgetting the quotes for attribute values that contain spaces. Ex: value=Start animation is illegal and results
       in an error.
     </p>
+    <h2>Use double quotes</h2>
+    <p>
+      Although either double or single quotes are acceptable around HTML attribute values, <u>good practice</u> is to use double quotes, which in general results
+      in more readable HTML. Ex: Use value="Start" instead of value='Start'. Inconsistent use of quotes can also lead to problems when using some web development
+      frameworks, which assume the developer uses double quotes.
+    </p>
+    <p>
+      If a double quote (") needs to be placed within an attribute value, the internal double quote must be escaped. A special character such as the double
+      quote can be <strong>escaped</strong> within an attribute value by placing the backslash character (\) before the special character, causing that character
+      to lose any special meaning. Ex: alt="Dwight D. \"Ike\" Eisenhower".
+    </p>
+    <p>
+      <img src="2-7-2-participation-activity.png" alt="identify correct use of quotes around attribute values" width="950">
+    </p>
+    <h2>Use boolean attributes concisely</h2>
+    <p>
+      A <strong>boolean attribute</strong> is an attribute that is true when present and false when absent. Ex: The checked attribute for a checkbox widget is
+      a boolean attribute. If the checked attribute is set, the checkbox is initially selected.
+    </p>
+    <p>
+      <img src="2-7-3-participation-activity.png" alt="boolean attributes" width="950">
+    </p>
+    <h2>Use lowercase for all tags and attributes</h2>
+    <p>
+      <u>Good practice</u> is to use lowercase for all tags and attributes. Ex: Use &lt;p&gt; and value="Start" instead of &lt;P&gt; and VALUE="Start".
+    </p>
+    <p>
+      <img src="2-7-4-participation-activity.png" alt="use lowercase" width="950">
+    </p>
+    <h2>Start block elements on new lines</h2>
+    <p>
+      Each block element should start on a new line. Ex: A &lt;p&gt;, &lt;table&gt;, or &lt;ol&gt; element should always begin on a new line. To highlight the
+      nature of block elements, inline elements should only start on a new line for readability purposes. Ex: A &lt;a&gt;, &lt;span&gt;, or &lt;q&gt; element may
+      start anywhere on a line.
+    </p>
+    <p>
+      <img src="2-7-5-participation-activity.png" alt="start block elements on a new line" width="1000">
+    </p>
+    <h2>Indent nested items consistently</h2>
+    <p>
+      Nested elements should be indented at least two spaces. Indentation should be consistent throughout a file.
+    </p>
+    <p>
+      <img src="2-7-1-table.png" alt="good and bad examples of consistent indentation" width="795">
+    </p>
+    <p>
+      <img src="2-7-6-participation-activity.png" alt="indent nested elements" width="1000">
+    </p>
+    <h2>Provide labels and placeholders</h2>
+    <p>
+      Always provide labels and/or placeholders for widgets. Ex: <br>
+      &lt;label for="sport"&gt;Favorite sport:&lt;/label&gt; <br>
+      &lt;input type="text" name="favoriteSport" id="sport" placeholder="Favorite sport"&gt;
+    </p>
+    <p>
+      <img src="2-7-7-participation-activity.png" alt="providing labels and placeholders" width="1000">
+    </p>
+    <h2>Separate content from presentation and functionality</h2>
+    <p>
+      <u>Good practice</u> is to not use embedded or inline CSS and JavaScript. Ex: Instead of using &lt;p style="color:red;"&gt;No!&lt;/p&gt;, use
+      &lt;p class="attention"&gt;No!&lt;/p&gt; and define the "attention" class in a CSS file.
+    </p>
+    <p>
+      <u>Good practice</u> is to use separate files for CSS and JavaScript instead of placing CSS and JavaScript in the HTML document. Ex: Instead of using the
+      &lt;style&gt; tags for specifying CSS rules within the HTML document, specify the CSS rules in a separate CSS file, such as theme.css, and import the file
+      using &lt;link rel="stylesheet" href="theme.css"&gt;.
+    </p>
+    <p>
+      <img src="2-7-8-participation-activity.png" alt="separate content from presentation and functionality" width="1000">
+    </p>
+    <h2>Use CSS for layout</h2>
+    <p>
+      CSS is designed for layout; tables are designed for holding tabular data. <u>Good practice</u> is to avoid using tables to manage page layout and to
+      avoid using CSS to manage tabular data. Using tables to manage layout obscures the content and meaning of the web page and can cause problems when trying
+      to control layout correctly using CSS. Using CSS to build tables requires more complex JavaScript to manage data tables in more sophisticated web
+      applications.
+    </p>
+    <h2>Validate HTML</h2>
+    <p>
+      <u>Good practice</u> is to validate HTML using an HTML validator and revise the HTML to eliminate any errors or warnings. One of the big challenges in
+      web development is to make sure that the web pages are processed correctly by as many browsers as possible. Strict adherence to the HTML Living Standard
+      generally reduces browser errors. The W3C official validator at <a href="https://validator.w3.org">https://validator.w3.org</a> is free, works well, and
+      allows validation by providing the URL, by uploading an HTML file, or by directly entering HTML.
+    </p>
+    <p>
+      <img src="2-7-9-participation-activity.png" alt="using the validator" width="1000">
+    </p>
+    <h2>Implementing the guidelines</h2>
+    <p>
+      The web page below implements the developer guidelines:
+    </p>
+    <ul>
+      <li>Closing tags like &lt;/p&gt; and &lt;/li&gt; are always used.</li>
+      <li>Double quotes are used around all attribute values, and boolean attributes like <strong>checked</strong> are used appropriately.</li>
+      <li>All tags and attributes are lowercase, and tags are indented properly.</li>
+      <li>Block elements like &lt;p&gt; and &lt;ol&gt; start on new lines.</li>
+      <li>The form uses labels for all widgets.</li>
+      <li>Separate CSS and JavaScript files are imported with &lt;link&gt; and &lt;script&gt; tags instead of placing the CSS and JavaScript in the
+        HTML document.</li>
+      <li>The &lt;table&gt; tag is used for displaying tabular data and not for laying out the page contents.</li>
+    </ul>
+    <p>
+      <img src="2-7-1-example.png" alt="example web page - html implementing the guidelines" width="955">
+    </p>
+    <p>
+      <img src="2-7-10-participation-activity.png" alt="consider all developer guidelines" width="1050">
+    </p>
+    <hr>
+    <h4>Exploring further:</h4>
+    <ul>
+      <li>
+        <a href="https://google.github.io/styleguide/htmlcssguide.html">google's style guide</a> for HTML and CSS
+      </li>
+      <li>
+        <a href="http://www.w3schools.com/html/html5_syntax.asp">W3School's style guide</a> for HTML, CSS, and JavaScript
+      </li>
+    </ul>
     
 
   </body>
