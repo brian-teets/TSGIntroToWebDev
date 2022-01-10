@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+    Name: Brian Wayne Teets
+    Date Created: 2022
+    Most recent revision:
+-->
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        <nav>
+          <hr>
+          <p>
+            <a href="index.html">Home</a> &nbsp; <a href="menu.html">Menu</a> &nbsp; <a href="contact.html">Contact Us</a>
+          </p>
+          <hr>
+        </nav>
+        <main>
+          <form action="submit.html" method="POST">
+            <p>
+              <label for="fullName">Name:</label>
+              <input type="text" name="fullName" id="fullName"> <br>
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email"> <br>
+              <label for="phone">Phone:</label>
+              <input type="text" name="phone" id="phone">
+            </p>
+            <p>
+              <label for="reason">Reason for Inquiry:</label>
+              <select name="reason" id="reason">
+                <option value="default" selected>Catering</option>
+                <option value="privateParty">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </p>
+            <p>
+              <label for="info">Additional Information:</label> <br>
+              <textarea name="info" id="info" rows="7" cols="80"></textarea>
+            </p>
+
+            <fieldset>
+              <legend>Have you been to the restaurant?</legend>
+                <input type="radio" name="question" value="yes" id="choice1">
+                <label for="choice1">Yes</label>
+                <input type="radio" name="question" value="no" id="choice2">
+                <label for="choice2">No</label>
+            </fieldset>   <br>
+            <fieldset>
+              <legend>Best days to contact you:</legend> <br>
+                <input type="checkbox" name="day" value="m" id="m">
+                <label for="m">M</label>
+                <input type="checkbox" name="day" value="t" id="t">
+                <label for="t">T</label>
+                <input type="checkbox" name="day" value="w" id="w">
+                <label for="w">W</label>
+                <input type="checkbox" name="day" value="th" id="th">
+                <label for="th">Th</label>
+                <input type="checkbox" name="day" value="f" id="f">
+                <label for="f">F</label>
+            </fieldset>
+
+            <p>
+              <input type="submit" name="submit" value="Send Request">
+            </p>
+
+          </form>
+        </main>
+
+        <footer>
+          <hr>
+          555 Mount Evans Blvd. <br>
+          Pine, Colorado 80470 <br>
+          720-555-5555
+        </footer>
+    </body>
+</html>
