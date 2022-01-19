@@ -1,0 +1,94 @@
+</html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lab 4.9 - CSS practice</title>
+    <style>
+      h2 {
+        font-size: 16pt;
+        font-family: Arial, sans-serif;
+        font-style: italic;
+        color: blue;
+      }
+      .outer {
+        background-color: #F0F0F0;
+        width: 600px;
+        height: 280px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: blue;
+        padding: 5px;
+        position: relative;
+      }
+      .verse1 {
+        background-color: yellow;
+        width: 200px;
+        padding: 10px;
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        float: left;
+      }
+      .verse2 {
+        /* no styling */
+      }
+      .verse3 {
+        background-color: orange;
+        position: absolute;
+        top: 200px;
+        left: 110px;
+        width: 200px;
+        padding: 10px;
+      }
+      .verse4 {
+        background-color: rgb(255, 80, 0);
+        color: white;
+        float: right;
+        width: 200px;
+        padding: 10px;
+        margin-right: 40px;
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="outer">
+      <h2>Yesterday</h2>
+      <div class="verse1">
+        Yesterday, All those backups seemed a waste of pay. Now my database has gone away. Oh I believe in yesterday.
+      </div>
+      <div class="verse2">
+        Suddenly, There's not half the files there used to be, And there's a milestone hanging over me. The system crashed so suddenly.
+        I pushed something wrong, What it was I could not say.
+      </div>
+      <div class="verse3">
+        Now all my data's gone and I long for yesterday-ay-ay-ay.
+      </div>
+      <div class="verse4">
+        Yesterday, The need for back-ups seemed so far away. I knew my data was all here to stay, Now I believe in yesterday.
+      </div>
+    </div>
+
+  </body>
+</html>
+
+<!--
+has a background color of "orange"
+is positioned at (110px, 200px) with absolute positioning written as top: 200px; left: 110px;
+has a 200 pixel width
+has a 10 pixel padding
+ -->
+ <!--
+ The orange-red section:
+has a background color of "rgb(255, 80, 0)"
+has white text
+floats to the right
+has a 200 pixel width
+has a 10 pixel padding
+has a right margin of 40 pixels, a top margin of 20 pixels, and all other margins set to 0
+ -->
