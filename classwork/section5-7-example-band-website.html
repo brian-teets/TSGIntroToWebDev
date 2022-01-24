@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>5.7 Example Band Website</title>
+    <style media="screen">
+    :root {
+       --header-color: white;
+       --font-color: #aed3e1;
+       --bg-color: #070040;
+    }
+
+    body {
+       font-family: Arial, sans-serif;
+       color: var(--font-color);
+       background-color: var(--bg-color);
+       display: grid;
+       justify-content: center;
+       grid-gap: 5px 50px;
+       grid-template-columns: auto;
+       grid-template-areas: "head" "members" "concerts" "contact";
+    }
+
+    header {
+       grid-area: head;
+    }
+
+    header > img {
+       width: 100%;
+       max-width: 1000px;
+       height: auto;
+    }
+
+    h1 {
+       color: var(--header-color);
+       font-size: 3rem;
+       font-style: italic;
+       font-variant: small-caps;
+       text-align: center;
+    }
+
+    h2 {
+       color: var(--header-color);
+       font-size: 2.5rem;
+       font-variant: small-caps;
+    }
+
+    section {
+       margin-left: 20px;
+       margin-right: 20px;
+    }
+
+    #members {
+       grid-area: members;
+    }
+
+    #members ul {
+       list-style-type: circle;
+       margin: 0;
+       padding-inline-start: 12px;
+    }
+
+    #members img {
+       margin-right: 20px;
+       margin-bottom: 10px;
+    }
+
+    .band-member {
+       display: flex;
+       flex-direction: row;
+       margin-bottom: 30px;
+    }
+
+    #concerts {
+       grid-area: concerts;
+    }
+
+    #contact {
+       grid-area: contact;
+    }
+
+    .center {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    .nav {
+       text-align: center;
+       margin-top: 12px;
+    }
+
+    .nav a {
+       text-decoration: none;
+       text-transform: lowercase;
+       font-weight: bold;
+       font-size: larger;
+       margin-left: 10px;
+       margin-right: 10px;
+    }
+
+    a:link {
+       color: #aed3e1;
+    }
+
+    a:visited {
+       color: #aed3e1;
+    }
+
+    a:hover {
+       color: yellow;
+    }
+
+    a:active {
+       color: purple;
+    }
+
+    tr:nth-child(even) {
+       background: #170070
+    }
+
+    td {
+       padding: 10px;
+    }
+
+    /* tablets */
+    @media all and (min-width: 600px) {
+       body {
+          grid-template-columns: auto auto;
+          grid-template-areas:
+             "head head"
+             "members concerts"
+             "members contact";
+       }
+       .band-member {
+          flex-direction: column;
+       }
+    }
+
+    /* desktop */
+    @media all and (min-width: 800px) {
+       .band-member {
+          flex-direction: row;
+       }
+    }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>5.7 Example Band Website</h1>
+      <!-- html taken directly from this lesson and css embedded as well -->
+         <header>
+            <h1>Reach Out</h1>
+            <img src="https://static-resources.zybooks.com/static/band_wide.jpg"
+               alt="Band at a concert" class="center">
+            <div class="nav">
+               <a href="#members">Members</a> &nbsp;
+               <a href="#concerts">Concerts</a> &nbsp;
+               <a href="#contact">Contact</a>
+            </div>
+         </header>
+
+         <section id="members">
+            <h2>Members</h2>
+            <div class="band-member">
+               <img src="https://static-resources.zybooks.com/static/singer_150.jpg"
+      srcset="https://static-resources.zybooks.com/static/singer_300.jpg 2x,
+      https://static-resources.zybooks.com/static/singer_450.jpg 3x"
+      alt="Singer" width="150">
+               <ul>
+                  <li><strong>Braden Williamson</strong></li>
+                  <li>Lead singer from Little Rock, Arkansas</li>
+                  <li>Powerful vocals and creative lyrics</li>
+               </ul>
+            </div>
+            <div class="band-member">
+                <img src="https://static-resources.zybooks.com/static/guitar_lead_150.jpg"
+      srcset="https://static-resources.zybooks.com/static/guitar_lead_300.jpg 2x,
+      https://static-resources.zybooks.com/static/guitar_lead_450.jpg 3x"
+      alt="Lead guitarist" width="150">
+               <ul>
+                  <li><strong>Ethan Andrews</strong></li>
+                  <li>Lead guitarist from Norfolk, Virginia</li>
+                  <li>Blistering soloist</li>
+               </ul>
+            </div>
+            <div class="band-member">
+               <img src="https://static-resources.zybooks.com/static/guitar_support_150.jpg"
+      srcset="https://static-resources.zybooks.com/static/guitar_support_300.jpg 2x,
+      https://static-resources.zybooks.com/static/guitar_support_450.jpg 3x"
+      alt="Support guitarist" width="150">
+               <ul>
+                  <li><strong>Colton Davis</strong></li>
+                  <li>Support guitarist from Denver, Colorado</li>
+                  <li>The glue that keeps the band together</li>
+               </ul>
+            </div>
+         </section>
+
+         <section id="concerts">
+            <h2>Concerts</h2>
+            <table>
+               <tr>
+                  <th>Date</th>
+                  <th>Venue</th>
+                  <th>Location</th>
+               </tr>
+               <tr>
+                  <td>Oct 10</td>
+                  <td><a target="_blank" href="https://goo.gl/maps/gjoYjzuAuwr">Red Rocks Amphitheater</a></td>
+                  <td>Morrison, CO</td>
+               </tr>
+               <tr>
+                  <td>Oct 17</td>
+                  <td><a target="_blank" href="https://goo.gl/maps/t8jHotrMHXR2">The Arkansas Music Pavilion</a></td>
+                  <td>Rogers, AR</td>
+               </tr>
+               <tr>
+                  <td>Oct 24</td>
+                  <td><a target="_blank" href="https://goo.gl/maps/Svm8GARQJAJ2">The Criterion</a></td>
+                  <td>Oklahoma City, OK</td>
+               </tr>
+               <tr>
+                  <td>Oct 31</td>
+                  <td><a target="_blank" href="https://goo.gl/maps/VkrEo1Hiwot">The Madrid Theatre</a></td>
+                  <td>Kansas City, MO</td>
+               </tr>
+            </table>
+         </section>
+
+         <section id="contact">
+            <h2>Contact</h2>
+
+            <p>Reach out to us on
+               <a href="https://twitter.com/ReachOut" target="_blank">Twitter</a> or at
+               <a href="mailto:reachout@email.com" target="_blank">reachout@email.com</a>
+            </p>
+
+            <p><a href="#">Top</a>
+            </p>
+         </section>
+
+    </main>
+    <!-- No addtional links listed in the footer on this lesson page
+    <footer>
+      <hr>
+
+      <h4>Exploring further:</h4>
+      <ul>
+        <li>
+          <a href="https://getbootstrap.com/getting-started/">getbootstrap.com</a> - download files and get started
+        </li>
+      </ul>
+      -->
+
+    </footer>
+
+  </body>
+</html>
