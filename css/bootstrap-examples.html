@@ -16,10 +16,57 @@ Date modified:
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous">
 
+    <style>
+      nav {
+          border-top: thin #5b7d87 solid;
+          border-bottom: thin #5b7d87 solid;
+          padding-top: 12px;
+          padding-bottom: 12px;
+      }
+      nav .btn {
+          background-color: #5b7d87;
+          color: #fef9ff;
+      }
+      nav .btn:hover {
+          font-weight: bold;
+      }
+
+    </style>
+
   </head>
 
   <body>
+
+    <!--   See Bootstrap's Text page for more examples of text classes.
+            https://getbootstrap.com/docs/4.1/utilities/text/
+    -->
+    <!--
+    Should I put the Jumbotron element inside the existing .container div or above it?
+
+    This choice is entirely up to you. Putting the Jumbotron immediately after the opening body tag and above the .container div, formats the
+    element to extend from the left margin to the right margin.
+
+    The .container class includes margins on the left and right edges, so if you nest the Jumbotron,
+    the browser will display those margins. Try it both ways and see which option you prefer.
+    -->
+
+    <!--
+    Read through Bootstrap's documentation on Buttons and on Badges to see other ideas for buttons, and experiment with additional settings on your own.
+
+    https://getbootstrap.com/docs/4.1/components/buttons/
+    https://getbootstrap.com/docs/4.1/components/badge/
+    -->
     <div class="container">
+      <header class="jumbotron"> <!-- bootstrap jumbotron class assigned to header element here -->
+          <h1>Marci Kitzmiller</h1>
+          <h2 class="font-italic">Web Developer Extraordinaire</h2>
+          <h3 class="text-right mt-5">Solving Web Dev problems every day!</h3> <!-- the h3 element here has 2 classes assigned separated by a space -->
+      </header>
+      <nav>
+        <a class="btn badge-pill" href="#">Contact Me</a> <!-- examples of bootstrap button classes. here btn class and badge-pill class are combined -->
+        <a class="btn badge-pill" href="">Projects</a>
+        <a class="btn badge-pill" href="">Testimonials</a>
+      </nav>
       <div class="row">
         <div class="col-lg-3 col-md">
           <!-- div for picture -->
