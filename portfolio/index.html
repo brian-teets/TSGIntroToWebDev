@@ -57,11 +57,12 @@ Most recent revision: January 26, 2022
         <p>
           <a href="testimonials.html">Testimonials</a>
         </p>
+        <div class="clear-float"></div>
       </nav>
       <section>
         <article id="about-me">
           <h2><em>About Me</em></h2>
-          <img src="images/brian-teets-color-300w-344h.jpg" alt="color photo of Brian Teets" width="305">
+          <img src="images/brian-teets-color-300w-344h.jpg" alt="color photo of Brian Teets" width="305" style="float: left;">
           <p>
           <!-- 1st paragraph about me -->
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ullamcorper sem a dolor eleifend malesuada. Integer ornare turpis mauris, id
@@ -79,12 +80,20 @@ Most recent revision: January 26, 2022
           amet augue odio. Aliquam molestie nisi ut lacus dignissim varius id sed purus. Vivamus efficitur, nisl id congue rutrum, neque neque lobortis nunc,
           <strong>ut aliquet ante augue condimentum ligula.</strong>
           </p>
+
+          <!-- comment out:   <div style="clear:both"> </div>    -->
+          <!-- tells the browser to turn off any floats (left or right) that are currently in effect.
+                Using an empty div block is a common trick for applying a style to a specific point in a page
+                without associating that style with any content. -->
+          <div class="clear-float"></div>
+
         </article>
 
         <article id="past-experiences">
           <h2><em>Past Experiences</em></h2>
           <img src="images/centurylink-brian-desk-327w-245h.jpg" alt="Brian's desk at CenturyLink in 2020">
           <!-- table to summarize previous work experiences -->
+          <div class="right-content">
           <table>
             <caption>Employment History</caption>
             <thead>
@@ -112,15 +121,18 @@ Most recent revision: January 26, 2022
             </tr>
           </tbody>
           </table>
+        </div>
+          <div class="clear-float"></div>
         </article>
 
         <article id="hobbies">
           <h2><em>Hobbies</em></h2>
           <img src="images/b-k-red-rocks-bands-350w-233h.jpg" alt="Brian and Kallie Teets with favorite band Needtobreathe at Red Rocks">
+          <div class="right-content">
           <ul>
             <li>Listening to my favorite bands</li>
               <ol>
-                <li>Needtobreathe (photo of my wife &amp; me with Needtobreathe, Switchfoot, and Drew Holcomb at Red Rocks)</li>
+                <li>Needtobreathe (at left, our photo with them at Red Rocks)</li>
                 <li>Collective Soul</li>
                 <li>For King &amp; Country</li>
               </ol>
@@ -147,7 +159,9 @@ Most recent revision: January 26, 2022
                 <li>In-N-Out Burger</li>
               </ul>
           </ul>
+        </div>
 
+          <div class="clear-float"></div>
         </article>
       </section>
 

@@ -8,6 +8,8 @@ body {
   background-color: #e4fde1ff; /* pistachio from coolors.co */
   font-family: arial, helvetica, sans-serif;
   color: #0d1f2d;
+  max-width: 900px;
+  margin: 0 auto;   /* sets a margin of 0 on all sides and auto centers element horizontally within the container */
 }
 
 header, footer {
@@ -21,6 +23,7 @@ header, footer {
 
 footer {
   margin-top: 25px;
+  margin-bottom: 10px;
   height: 50px;
   padding: 20px 10px 20px 5px;
 }
@@ -28,7 +31,7 @@ footer {
 h1 {
   font-size: 2.5em;
 }
-
+/* Navigation styling */
 nav {
   border-top: 3px dashed #ffbf46ff;
   border-bottom: 3px dashed #ffbf46ff;
@@ -36,6 +39,56 @@ nav {
   attributes here replace those */
   margin-top: 4px;
 }
+
+nav a {
+  display: block;
+  margin: 20px 20px;
+  width: 100px;
+  float: left;
+  background-color: #575761ff;
+  color: #fef9ff;
+  padding: 8px;
+  border: thin solid #ffbf46ff;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:visited {
+  color: #e4fde1ff;
+}
+
+nav a:hover {
+  background-color: #ffbf46ff;
+  color: #575761ff;
+}
+
+nav a:active {
+  font-weight: bold;
+}
+
+/* article float and styling */
+.clear-float {
+  clear: both;
+}
+
+article img {
+  float: left;
+}
+
+.right-content {
+  float: left;
+}
+
+article {
+  margin-bottom: 15px;
+}
+
+/*
+The float property tells the browser to align the block against the edge of its container, and if there is already something else floating there,
+the browser will stack them horizontally if they have the same float value. So two consecutive left floats will align themselves in a single row,
+with the entire row aligned against the left margin.
+ */
+
 /*
 --nyanza: #e4fde1ff;
 --pistachio: #8acb88ff;
