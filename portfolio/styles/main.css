@@ -1,0 +1,97 @@
+/*
+Created by: Brian Teets
+Date created: January 26, 2022
+Date last modified:
+ */
+
+body {
+  background-color: #e4fde1ff; /* pistachio from coolors.co */
+  font-family: arial, helvetica, sans-serif;
+  color: #0d1f2d;
+}
+
+header, footer {
+  background-color: #575761ff;
+  color: #fef9ff;
+  height: 100px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+  /* reminder: shorhand order for padding is top right bottom left. if only 3 values exist, then top left & right bottom */
+}
+
+footer {
+  margin-top: 25px;
+  height: 50px;
+  padding: 20px 10px 20px 5px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+nav {
+  border-top: 3px dashed #ffbf46ff;
+  border-bottom: 3px dashed #ffbf46ff;
+  /* previously had an hr tag on the html file before and after the navigation element. the border-top and border-bottom
+  attributes here replace those */
+  margin-top: 4px;
+}
+/*
+--nyanza: #e4fde1ff;
+--pistachio: #8acb88ff;
+--steel-teal: #648381ff;
+--davys-grey: #575761ff;
+--maximum-yellow-red: #ffbf46ff;
+ */
+
+/* styling for form: */
+label, fieldset{
+    font-size: 1.1em;
+}
+
+input[type=text] {
+    border: 2px solid #e4fde1ff;
+    width: 50%;
+    padding: 8px 8px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    font-size: 1.1em;
+}
+
+fieldset {
+    background-color: #8acb88ff;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing:	border-box;
+}
+
+select, textarea {
+    margin: 12px 0;
+    font-size: 1em;
+}
+
+input[type=submit] {
+    font-size: 1.2em;
+    background-color: #648381ff;
+    color: #fef9ff;
+    padding: 4px 8px;
+}
+
+input[type=submit]:hover {
+    background-color: #ffbf46ff;
+    color: #575761ff;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    border: 2px solid #575761ff;
+    border-radius: 3px;
+    background-color: #fff;
+    resize: none;
+}
+/* end form styling */

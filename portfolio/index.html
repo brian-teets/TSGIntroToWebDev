@@ -2,12 +2,41 @@
 <!--
 Name: Brian Wayne Teets
 Date Created: Friday, January 7, 2022
-Most recent revision:
+Most recent revision: January 26, 2022
  -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Brian's Portfolio</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <!-- remember precedence rules. external stylesheet link should be placed before internal style rules. -->
+    <style media="screen">
+      caption {
+        font-weight: bold;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+      }
+      table, th, td {
+        border: 1px solid #648381ff;
+        border-collapse: collapse;
+        padding: 5px 10px;
+      }
+      table {
+        width: 90%;
+        margin: auto;
+      }
+      tr {
+        height: 30px;
+      }
+      th {
+        background-color: #575761ff;
+        color: #f2eded;
+      }
+      tr:nth-child(odd) {
+        /* styles only n tr rows. in this case, only odd table rows are styled with the below properties. */
+        background-color: #8acb88ff;
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -15,7 +44,6 @@ Most recent revision:
         <h1>Portfolio for Brian Teets</h1>
       </header>
       <nav>
-        <hr>
         <p>
           <!-- Will need to add links to projects.html, contact.html, and testimonials.html -->
           <a href="index.html">Home</a>
@@ -29,7 +57,6 @@ Most recent revision:
         <p>
           <a href="testimonials.html">Testimonials</a>
         </p>
-        <hr>
       </nav>
       <section>
         <article id="about-me">
@@ -60,11 +87,14 @@ Most recent revision:
           <!-- table to summarize previous work experiences -->
           <table>
             <caption>Employment History</caption>
+            <thead>
             <tr>
               <th>Years of Employment</th>
               <th>Title / Role</th>
               <th>Company</th>
             </tr>
+          </thead>
+          <tbody>
             <tr>
               <td>2021-Present</td>
               <td>Apprentice</td>
@@ -80,6 +110,7 @@ Most recent revision:
               <td>Test Engineer</td>
               <td>Level3</td>
             </tr>
+          </tbody>
           </table>
         </article>
 
@@ -121,7 +152,6 @@ Most recent revision:
       </section>
 
       <footer>
-        <hr>
         &copy; 2022 Brian Teets. All rights reserved.
       </footer>
 
