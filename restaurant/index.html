@@ -7,24 +7,34 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Pine Junction Grill</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css">
+        <!-- remember precedence rules. place external stylesheet before internal style rules -->
+        <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+
     </head>
     <body>
         <header>
             <h1>Pine Junction Grill</h1>
         </header>
         <nav>
-          <hr>
           <p>
-            <a href="index.html">Home</a> &nbsp; <a href="menu.html">Menu</a> &nbsp; <a href="contact.html">Contact Us</a>
+            <a class="btn" href="index.html">Home</a>
+            <a class="btn" href="menu.html">Menu</a>
+            <a class="btn" href="contact.html">Contact Us</a>
           </p>
-          <hr>
+        <div class="clear-float"></div>
         </nav>
         <main>
           <p>
             <!-- Photo by Jonathan Borba from Pexels
             https://www.pexels.com/search/burger%20restaurant/?orientation=landscape -->
-            <img src="images/pexels-jonathan-borba-2983101-500px.jpg" alt="close up burger and fries on black background" width="450">
+            <img src="images/pexels-jonathan-borba-2983101-500px.jpg" alt="close up burger and fries on black background" width="450" style="float: left;
+            margin-right: 5px; padding: 5px;">
           </p>
           <h2>Restaurant Description</h2>
           <p>
@@ -34,22 +44,27 @@
             amazing view of the front range!
           </p>
           <p>
-            We have many local beers on tap as well as hard ciders and localally distilled whiskeys and gins. Flights are availble as well!
+            We have many local beers on tap as well as hard ciders and localally distilled whiskeys and gins. Flights are available as well!
           </p>
           <h2>Read a recent review:</h2>
           <p>
             <a href="https://www.yelp.com/biz/snowpack-taproom-and-pizzeria-conifer-2">4.4 out of 5 average review!</a>
           </p>
+          <!-- A couple of notes on links for me to remember: regarding a:visited, the visited attributes/colors will persist even if the page has
+            been refreshed; if you add new links, those will remain the default anchor color/attributes until clicked and visited; if the link
+              is broken or unreachable, then the link will not be considered as visited yet; if the user clears browser cache and browser history and
+              clears cache and browser history preceding before when the link was visited, then those particular links will return to default a attributes;
+              if a link was visited prior to the chosen time range of clearing the browser history and cache, then the user will still see a link or links
+              display with visited attributes.-->
 
-
+          <div class="clear-float"></div>
         </main>
 
+
         <footer>
-          <hr>
           555 Mount Evans Blvd. <br>
           Pine, Colorado 80470 <br>
           720-555-5555
-
         </footer>
     </body>
 </html>

@@ -1,0 +1,97 @@
+/*
+created by: Brian Teets
+Date created: Jan 27, 2022
+Date modified:
+ */
+ body {
+   background-color: #a1b0abff;  /* blueish gray color - can use black font */
+   font-family: arial, helvetica, sans-serif;
+   font-size: 14px;
+   color: #0a1721; /* shade of black or really dark gray -  color-hex.com */
+   max-width: 900px;
+   margin: 0 auto;   /* sets a margin of 0 on all sides and auto centers element horizontally within the container */
+}
+header, footer {
+  /* common styling for header and footer sections */
+  background-color: #929487ff;
+  color: #ffffff; /* hex color code for white */
+  height: 100px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+  /* reminder: shorhand order for padding is top right bottom left. if only 3 values exist, then top left & right bottom */
+}
+footer {
+  /* something different about footer style */
+  font-size: 0.97em;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  height: 90px;
+  padding: 10px 10px 20px 5px;
+}
+h1 {
+  font-size: 2.75em;
+}
+h2 {
+  font-size: 2.25em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.15em;
+}
+
+/* link, visited, hover, active */
+a {
+  /* non-navigation hyperlinks / external links */
+  text-decoration: underline;
+}
+a:link {
+  color: #0a75ad;
+}
+a:visited {
+  color: #30321c; /* pine tree green */
+}
+a:hover {
+  font-weight: bold;
+}
+a:active {
+  font-style: italic;
+  text-decoration: none;
+}
+/*  A couple of notes on links for me to remember: regarding a:visited, the visited attributes/colors will persist even if the page has
+    been refreshed; if you add new links, those will remain the default anchor color/attributes until clicked and visited; if the link
+    is broken or unreachable, then the link will not be considered as visited yet; if the user clears browser cache and browser history and
+    clears cache and browser history preceding before when the link was visited, then those particular links will return to default a attributes;
+    if a link was visited prior to the chosen time range of clearing the browser history and cache, then the user will still see a link or links
+    display with visited attributes. */
+
+
+nav {
+  background-color: #c3dac3ff;
+  border-top: 2px solid #ffffff;  /* white */
+  border-bottom: 2px solid #ffffff;
+  /* previously had an hr tag on the html file before and after the navigation element. the border-top and border-bottom
+  attributes here replace those */
+  margin-top: 4px;
+}
+nav a {
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 10px 10px;
+    width: 100px;
+    float:left;
+}
+nav .btn {
+    background-color: #a1b0abff;
+    color: #0a1721;
+}
+nav .btn:hover {
+    font-weight: bold;
+}
+
+.clear-float {
+  clear: both;
+}

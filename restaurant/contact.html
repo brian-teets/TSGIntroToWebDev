@@ -2,30 +2,94 @@
 <!--
     Name: Brian Wayne Teets
     Date Created: 2022
-    Most recent revision:
+    Most recent revision: January 27, 2022
 -->
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
         <title>Contact Us</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+        <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css">
+        <!-- remember precedence rules. place external stylesheet before internal style rules -->
+        <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <style>
+          label, fieldset, legend {
+            font-size: 0.95em;
+            font-weight: bold;
+          }
+          legend {
+            padding-bottom: 14px;
+          }
+          input[type=text] {
+              border: 2px solid #6b6054ff;
+              width: 50%;
+              padding: 5px 8px;
+              margin: 3px 0;
+              box-sizing: border-box;
+              font-size: 1.1em;
+          }
+
+          fieldset {
+              background-color: #c3dac3ff;
+              width: 90%;
+              padding: 0px 15px;
+              margin: 5px 0;
+              box-sizing:	border-box;
+              display: block;
+          }
+
+          select, textarea {
+              margin: 12px 0;
+              font-size: 1em;
+          }
+
+          input[type=submit] {
+              font-size: 1.2em;
+              background-color: #648381ff;
+              color: #fef9ff;
+              padding: 4px 8px;
+          }
+
+          input[type=submit]:hover {
+              background-color: #d5ecd4ff;
+              color: #575761ff;
+          }
+
+          textarea {
+              width: 90%;
+              height: 200px;
+              padding: 10px 15px;
+              margin: 8px 0;
+              box-sizing: border-box;
+              border: 2px solid #6b6054ff;
+              border-radius: 3px;
+              background-color: #fff;
+              resize: none;
+          }
+          /* end form styling */
+        </style>
+
     </head>
     <body>
         <header>
             <h1>Contact Us</h1>
         </header>
         <nav>
-          <hr>
           <p>
-            <a href="index.html">Home</a> &nbsp; <a href="menu.html">Menu</a> &nbsp; <a href="contact.html">Contact Us</a>
+            <a class="btn" href="index.html">Home</a>
+            <a class="btn" href="menu.html">Menu</a>
+            <a class="btn" href="contact.html">Contact Us</a>
           </p>
-          <hr>
+          <div class="clear-float"></div>
         </nav>
         <main>
           <form action="submit.html" method="POST">
             <p>
-              <label for="fullName">Name:</label>
+              <label for="fullName">Name:&nbsp;</label>
               <input type="text" name="fullName" id="fullName"> <br>
-              <label for="email">Email:</label>
+              <label for="email">Email:&nbsp;</label>
               <input type="text" name="email" id="email"> <br>
               <label for="phone">Phone:</label>
               <input type="text" name="phone" id="phone">
@@ -73,7 +137,6 @@
         </main>
 
         <footer>
-          <hr>
           555 Mount Evans Blvd. <br>
           Pine, Colorado 80470 <br>
           720-555-5555
